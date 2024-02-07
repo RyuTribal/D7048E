@@ -3,10 +3,13 @@
 bin-int/
 Intermediates/
 
+!/vendor/premake/bin/
+
 # Misc files
 *.log
 *.cmake
 .idea/
+CMakeLists.txt
 
 # Visual Studio files and folder
 .vs/
