@@ -1,0 +1,19 @@
+# Binaries
+**/bin/
+bin-int/
+Intermediates/
+
+# Misc files
+*.log
+*.cmake
+.idea/
+
+# Visual Studio files and folder
+.vs/
+.vscode/
+**.sln
+**.vcxproj
+**.vcxproj.filters
+**.vcxproj.user
+**.csproj
+Makefile

@@ -1,0 +1,6 @@
+C:/Programming/D7048E/cmake-build-debug/CMakeFiles/App.dir
+C:/Programming/D7048E/cmake-build-debug/CMakeFiles/GLFW.dir
+C:/Programming/D7048E/cmake-build-debug/CMakeFiles/Glad.dir
+C:/Programming/D7048E/cmake-build-debug/CMakeFiles/ImGui.dir
+C:/Programming/D7048E/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Programming/D7048E/cmake-build-debug/CMakeFiles/rebuild_cache.dir

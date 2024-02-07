@@ -1,0 +1,1 @@
+-IC:/Programming/D7048E/App/vendor/spdlog/include -IC:/Programming/D7048E/App/vendor/GLFW/include -IC:/Programming/D7048E/App/vendor/Glad/include -IC:/Programming/D7048E/App/vendor/imgui -IC:/Programming/D7048E/App/vendor/glm -IC:/Programming/D7048E/App/vendor/LeapSDK/include -IC:/Programming/D7048E/App/src
