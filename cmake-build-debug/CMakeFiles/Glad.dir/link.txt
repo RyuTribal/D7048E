@@ -1,0 +1,2 @@
+/usr/bin/ar qc C:/Users/levei/Desktop/INFO/S8-LTU/D7048E/D7048E/App/vendor/Glad/bin/Debug-windows-x86_64/Glad/libGlad.a CMakeFiles/Glad.dir/App/vendor/Glad/src/gl.c.o
+/usr/bin/ranlib C:/Users/levei/Desktop/INFO/S8-LTU/D7048E/D7048E/App/vendor/Glad/bin/Debug-windows-x86_64/Glad/libGlad.a

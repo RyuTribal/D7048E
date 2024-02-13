@@ -1,0 +1,2 @@
+/usr/bin/ar qc C:/Users/levei/Desktop/INFO/S8-LTU/D7048E/D7048E/App/vendor/imgui/bin/Debug-windows-x86_64/ImGui/libImGui.a CMakeFiles/ImGui.dir/App/vendor/imgui/imgui.cpp.o CMakeFiles/ImGui.dir/App/vendor/imgui/imgui_demo.cpp.o CMakeFiles/ImGui.dir/App/vendor/imgui/imgui_draw.cpp.o CMakeFiles/ImGui.dir/App/vendor/imgui/imgui_tables.cpp.o CMakeFiles/ImGui.dir/App/vendor/imgui/imgui_widgets.cpp.o
+/usr/bin/ranlib C:/Users/levei/Desktop/INFO/S8-LTU/D7048E/D7048E/App/vendor/imgui/bin/Debug-windows-x86_64/ImGui/libImGui.a
