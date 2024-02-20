@@ -1,6 +1,8 @@
 #include "Connection.h"
+#include <iostream>
 
 namespace Gesture {
+    struct Callbacks ConnectionCallbacks;
 	LEAP_CONNECTION* Connection::OpenConnection()
 	{
         if (isRunning) {
@@ -14,4 +16,23 @@ namespace Gesture {
         }
         return &connectionHandle;
 	}
+
+    void Connection::OnConnection(const LEAP_CONNECTION_EVENT* connection_event)
+    {
+        if (ConnectionCallbacks.on_connection) {
+            ConnectionCallbacks.on_connection();
+            printf("Connected");
+            isConnected = true;
+        }
+    }
+
+    void Connection::OnConnectionLost(const LEAP_CONNECTION_LOST_EVENT* connection_lost_event)
+    {
+        if (ConnectionCallbacks.on_connection_lost) {
+            ConnectionCallbacks.on_connection_lost();
+            isConnected = false;
+        }
+    }
+
+
 }

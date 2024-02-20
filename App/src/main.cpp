@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <iostream>
 #include <stdlib.h>
 #include <Windows.h>
 #include <time.h>
@@ -44,14 +45,19 @@ int main(int argc, char** argv) {
       result = LeapPollConnection(*connection.handle(), timeout, &msg);
 
       if (result != eLeapRS_Success) {
-          printf("Haram");
-          printf("\n");
+          std::cout << "Haram: " << ResultString(result) << std::endl;
       }
 
-      printf(ResultString(result));
-      printf("\n");
+      switch (msg.type) {
+      case eLeapEventType_Connection:
+          connection.OnConnection(msg.connection_event);
+          break;
+      case eLeapEventType_ConnectionLost:
+          connection.OnConnectionLost(msg.connection_lost_event);
+          break;
+      }
   }
-  
+ 
   return 0;
 }
 
