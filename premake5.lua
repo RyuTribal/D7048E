@@ -64,7 +64,7 @@ project "App"
         "GLFW",
         "Glad",
         "ImGui",
-        "LeapC",
+        "LeapC"
     }
 
     defines
@@ -96,12 +96,6 @@ project "App"
         links 
         {
             "opengl32.lib"
-        }
-
-        files
-        {
-            "%{prj.name}/src/Platform/Windows/**.cpp",
-            "%{prj.name}/src/Platform/Windows/**.h",
         }
 
     filter "configurations:Debug"

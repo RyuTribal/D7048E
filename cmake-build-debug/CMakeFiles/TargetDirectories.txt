@@ -1,0 +1,6 @@
+/mnt/c/Users/levei/Desktop/INFO/S8-LTU/D7048E/D7048E/cmake-build-debug/CMakeFiles/App.dir
+/mnt/c/Users/levei/Desktop/INFO/S8-LTU/D7048E/D7048E/cmake-build-debug/CMakeFiles/GLFW.dir
+/mnt/c/Users/levei/Desktop/INFO/S8-LTU/D7048E/D7048E/cmake-build-debug/CMakeFiles/Glad.dir
+/mnt/c/Users/levei/Desktop/INFO/S8-LTU/D7048E/D7048E/cmake-build-debug/CMakeFiles/ImGui.dir
+/mnt/c/Users/levei/Desktop/INFO/S8-LTU/D7048E/D7048E/cmake-build-debug/CMakeFiles/edit_cache.dir
+/mnt/c/Users/levei/Desktop/INFO/S8-LTU/D7048E/D7048E/cmake-build-debug/CMakeFiles/rebuild_cache.dir
