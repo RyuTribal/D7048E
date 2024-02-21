@@ -92,6 +92,11 @@ project "App"
             "BUILD_DLL",
             "GLFW_INCLUDE_NONE"
         }
+
+        postbuildcommands
+        {
+            ("{COPY} %{wks.location}/App/vendor/LeapSDK/lib/x64/LeapC.dll ../bin/" .. outputdir .. "/App")
+        }
         
         links 
         {

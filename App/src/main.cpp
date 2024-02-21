@@ -3,59 +3,77 @@
 #include <stdlib.h>
 #include <Windows.h>
 #include <time.h>
+#include <chrono>
+#include <thread>
 #include "LeapC.h"
 #include "LeapMotion/Connection.h"
+#include "Utils/Log.h"
 
 LEAP_CLOCK_REBASER clockSynchronizer;
 
-const char* ResultString(eLeapRS r) {
-    switch (r) {
-    case eLeapRS_Success:                  return "eLeapRS_Success";
-    case eLeapRS_UnknownError:             return "eLeapRS_UnknownError";
-    case eLeapRS_InvalidArgument:          return "eLeapRS_InvalidArgument";
-    case eLeapRS_InsufficientResources:    return "eLeapRS_InsufficientResources";
-    case eLeapRS_InsufficientBuffer:       return "eLeapRS_InsufficientBuffer";
-    case eLeapRS_Timeout:                  return "eLeapRS_Timeout";
-    case eLeapRS_NotConnected:             return "eLeapRS_NotConnected";
-    case eLeapRS_HandshakeIncomplete:      return "eLeapRS_HandshakeIncomplete";
-    case eLeapRS_BufferSizeOverflow:       return "eLeapRS_BufferSizeOverflow";
-    case eLeapRS_ProtocolError:            return "eLeapRS_ProtocolError";
-    case eLeapRS_InvalidClientID:          return "eLeapRS_InvalidClientID";
-    case eLeapRS_UnexpectedClosed:         return "eLeapRS_UnexpectedClosed";
-    case eLeapRS_UnknownImageFrameRequest: return "eLeapRS_UnknownImageFrameRequest";
-    case eLeapRS_UnknownTrackingFrameID:   return "eLeapRS_UnknownTrackingFrameID";
-    case eLeapRS_RoutineIsNotSeer:         return "eLeapRS_RoutineIsNotSeer";
-    case eLeapRS_TimestampTooEarly:        return "eLeapRS_TimestampTooEarly";
-    case eLeapRS_ConcurrentPoll:           return "eLeapRS_ConcurrentPoll";
-    case eLeapRS_NotAvailable:             return "eLeapRS_NotAvailable";
-    case eLeapRS_NotStreaming:             return "eLeapRS_NotStreaming";
-    case eLeapRS_CannotOpenDevice:         return "eLeapRS_CannotOpenDevice";
-    default:                               return "unknown result type.";
-    }
+void millisleep(int milliseconds) {
+    std::this_thread::sleep_for(std::chrono::milliseconds(milliseconds));
 }
 
 
 int main(int argc, char** argv) {
-	Gesture::Connection connection = Gesture::Connection{};
-  LEAP_CONNECTION* connHandle = connection.OpenConnection();
+    Gesture::Log::Init();
+    CORE_INFO("Log initialized!");
+
+  Gesture::Connection::Instance()->OpenConnection();
+  LEAP_CLOCK_REBASER clockSynchronizer;
+  LeapCreateClockRebaser(&clockSynchronizer);
+  clock_t  cpuTime;
+  int64_t targetFrameTime = 0;
+  uint64_t targetFrameSize = 0;
   eLeapRS result;
-  LEAP_CONNECTION_MESSAGE msg;
-  while (connection.GetIsRunning()) {
-	  unsigned int timeout = 1000;
-      result = LeapPollConnection(*connection.handle(), timeout, &msg);
+  while (Gesture::Connection::Instance()->GetIsRunning()) {
 
-      if (result != eLeapRS_Success) {
-          std::cout << "Haram: " << ResultString(result) << std::endl;
+      cpuTime = std::chrono::duration_cast<std::chrono::microseconds>(std::chrono::system_clock::now().time_since_epoch()).count() ;
+      LeapUpdateRebase(clockSynchronizer, cpuTime, LeapGetNow());
+
+      millisleep(10);
+
+      cpuTime = std::chrono::duration_cast<std::chrono::microseconds>(std::chrono::system_clock::now().time_since_epoch()).count();
+
+      //Translate application time to Leap time
+      LeapRebaseClock(clockSynchronizer, cpuTime, &targetFrameTime);
+
+      //Get the buffer size needed to hold the tracking data
+      result = LeapGetFrameSize(*Gesture::Connection::Instance()->handle(), targetFrameTime, &targetFrameSize);
+      //Simulate delay (i.e. processing load, v-sync, etc)
+      if (result == eLeapRS_Success) {
+          LEAP_TRACKING_EVENT* interpolatedFrame = (LEAP_TRACKING_EVENT*)malloc((size_t)targetFrameSize);
+          //Get the frame
+          result = LeapInterpolateFrame(*Gesture::Connection::Instance()->handle(), targetFrameTime, interpolatedFrame, targetFrameSize);
+          if (result == eLeapRS_Success) {
+              //Use the data...
+              printf("Frame %lli with %i hands with delay of %lli microseconds.\n",
+                  (long long int)interpolatedFrame->tracking_frame_id,
+                  interpolatedFrame->nHands,
+                  (long long int)LeapGetNow() - interpolatedFrame->info.timestamp);
+              for (uint32_t h = 0; h < interpolatedFrame->nHands; h++) {
+                  LEAP_HAND* hand = &interpolatedFrame->pHands[h];
+                  printf("    Hand id %i is a %s hand with position (%f, %f, %f).\n",
+                      hand->id,
+                      (hand->type == eLeapHandType_Left ? "left" : "right"),
+                      hand->palm.position.x,
+                      hand->palm.position.y,
+                      hand->palm.position.z);
+              }
+              //Free the allocated buffer when done.
+              free(interpolatedFrame);
+          }
+          else {
+              printf("LeapInterpolateFrame() result was %s.\n", Gesture::Connection::ResultString(result));
+          }
+      }
+      else {
+          printf("LeapGetFrameSize() result was %s.\n", Gesture::Connection::ResultString(result));
       }
 
-      switch (msg.type) {
-      case eLeapEventType_Connection:
-          connection.OnConnection(msg.connection_event);
-          break;
-      case eLeapEventType_ConnectionLost:
-          connection.OnConnectionLost(msg.connection_lost_event);
-          break;
-      }
+      // std::cout << "Message: " << MessageTypeString(msg.type) << std::endl;
+      
   }
  
   return 0;
