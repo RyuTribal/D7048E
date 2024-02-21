@@ -1,5 +1,6 @@
 #include "Connection.h"
 #include "Utils/Log.h"
+#include "Utils/TaskQueue.h"
 
 namespace Gesture {
     Connection* Connection::instance = nullptr;
@@ -32,6 +33,17 @@ namespace Gesture {
             }
 
             CORE_INFO("Message: {0}", MessageTypeString(Instance()->latest_message.type));
+
+            switch (Instance()->latest_message.type) {
+            case eLeapEventType_Tracking:
+                if (Instance()->GetCallbackStruct()->on_frame) {
+                    auto tracking_event = Instance()->latest_message.tracking_event;
+                    TaskQueue::Instance()->EnqueueTask([tracking_event]() {
+                        Instance()->GetCallbackStruct()->on_frame(tracking_event); // This will be sent to the main thread for execution
+                       });
+                }
+                break;
+            }
         }
     }
 
