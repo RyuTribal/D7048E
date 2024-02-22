@@ -1,0 +1,586 @@
+Initialized
+press enter to quit
+Connected to motion sensor
+Frame.id:  462237,Timestamp: 700869500334, Hand_number: 0
+Frame.id:  462238,Timestamp: 700869519946, Hand_number: 0
+Frame.id:  462239,Timestamp: 700869539835, Hand_number: 0
+Frame.id:  462240,Timestamp: 700869559346, Hand_number: 0
+Frame.id:  462241,Timestamp: 700869579761, Hand_number: 0
+Frame.id:  462242,Timestamp: 700869598663, Hand_number: 0
+Frame.id:  462243,Timestamp: 700869619194, Hand_number: 0
+Frame.id:  462244,Timestamp: 700869638430, Hand_number: 0
+Frame.id:  462245,Timestamp: 700869658057, Hand_number: 0
+Frame.id:  462246,Timestamp: 700869677915, Hand_number: 0
+Frame.id:  462247,Timestamp: 700869697034, Hand_number: 0
+Frame.id:  462248,Timestamp: 700869716623, Hand_number: 0
+Frame.id:  462249,Timestamp: 700869736271, Hand_number: 0
+Frame.id:  462250,Timestamp: 700869755999, Hand_number: 0
+Frame.id:  462251,Timestamp: 700869775624, Hand_number: 0
+Frame.id:  462252,Timestamp: 700869795387, Hand_number: 0
+Frame.id:  462253,Timestamp: 700869815096, Hand_number: 0
+Frame.id:  462254,Timestamp: 700869834650, Hand_number: 0
+Frame.id:  462255,Timestamp: 700869854358, Hand_number: 0
+Frame.id:  462256,Timestamp: 700869874003, Hand_number: 0
+Frame.id:  462257,Timestamp: 700869893742, Hand_number: 0
+Frame.id:  462258,Timestamp: 700869913367, Hand_number: 0
+Frame.id:  462259,Timestamp: 700869933619, Hand_number: 0
+Frame.id:  462260,Timestamp: 700869952852, Hand_number: 0
+Frame.id:  462261,Timestamp: 700869972693, Hand_number: 0
+Frame.id:  462262,Timestamp: 700869992171, Hand_number: 0
+Frame.id:  462263,Timestamp: 700870011844, Hand_number: 0
+Frame.id:  462264,Timestamp: 700870051976, Hand_number: 0
+Frame.id:  462265,Timestamp: 700870090546, Hand_number: 0
+Frame.id:  462266,Timestamp: 700870110200, Hand_number: 0
+Frame.id:  462267,Timestamp: 700870129831, Hand_number: 0
+Frame.id:  462268,Timestamp: 700870150084, Hand_number: 0
+Frame.id:  462269,Timestamp: 700870170245, Hand_number: 0
+Frame.id:  462270,Timestamp: 700870189531, Hand_number: 0
+Frame.id:  462271,Timestamp: 700870208528, Hand_number: 0
+Frame.id:  462272,Timestamp: 700870228322, Hand_number: 0
+Frame.id:  462273,Timestamp: 700870248328, Hand_number: 0
+Frame.id:  462274,Timestamp: 700870268353, Hand_number: 0
+Frame.id:  462275,Timestamp: 700870288127, Hand_number: 0
+Frame.id:  462276,Timestamp: 700870307114, Hand_number: 0
+Frame.id:  462277,Timestamp: 700870326851, Hand_number: 0
+Frame.id:  462278,Timestamp: 700870347125, Hand_number: 0
+Frame.id:  462279,Timestamp: 700870366438, Hand_number: 0
+Frame.id:  462280,Timestamp: 700870387063, Hand_number: 0
+Frame.id:  462281,Timestamp: 700870405395, Hand_number: 0
+Frame.id:  462282,Timestamp: 700870425540, Hand_number: 0
+Frame.id:  462283,Timestamp: 700870444713, Hand_number: 0
+Frame.id:  462284,Timestamp: 700870464555, Hand_number: 0
+Frame.id:  462285,Timestamp: 700870484668, Hand_number: 1
+ ,hand_Id_type: 416right hand ,hand_finger's_number:1,hand direction: (0.265059, 0.368225, -0.891153) ,Palm position: (23.8617, 111.204, 86.3645) ,Palm normal: (-0.125274, -0.903226, -0.410474)
+ ,Finger_type(tipposition) TYPE_INDEX(17.7526, 118.889, -10.2799)
+ ,Finger_type(tipposition) TYPE_THUMB(3.69387, 71.9572, 41.2997)
+ ,Finger_type(tipposition) TYPE_MIDDLE(7.83155, 76.8578, 81.8153)
+ ,Finger_type(tipposition) TYPE_RING(20.8989, 73.8359, 87.8093)
+ ,Finger_type(tipposition) TYPE_PINKY(34.872, 78.0962, 90.6305)
+Frame.id:  462286,Timestamp: 700870512008, Hand_number: 1
+ ,hand_Id_type: 416right hand ,hand_finger's_number:1,hand direction: (0.256766, 0.419389, -0.870737) ,Palm position: (22.4657, 116.279, 84.6318) ,Palm normal: (-0.0712254, -0.890282, -0.449806)
+ ,Finger_type(tipposition) TYPE_INDEX(17.2428, 127.747, -11.6889)
+ ,Finger_type(tipposition) TYPE_THUMB(6.25531, 77.5952, 38.0794)
+ ,Finger_type(tipposition) TYPE_MIDDLE(8.29886, 81.0924, 78.2317)
+ ,Finger_type(tipposition) TYPE_RING(21.5138, 78.8057, 84.4083)
+ ,Finger_type(tipposition) TYPE_PINKY(35.1717, 83.6425, 87.6768)
+Frame.id:  462287,Timestamp: 700870544264, Hand_number: 1
+ ,hand_Id_type: 416right hand ,hand_finger's_number:1,hand direction: (0.249499, 0.469487, -0.846955) ,Palm position: (19.9455, 126.526, 83.7744) ,Palm normal: (-0.0257948, -0.871082, -0.49046)
+ ,Finger_type(tipposition) TYPE_INDEX(15.5076, 142.158, -11.9984)
+ ,Finger_type(tipposition) TYPE_THUMB(6.61929, 89.1869, 35.4707)
+ ,Finger_type(tipposition) TYPE_MIDDLE(7.4192, 90.9711, 75.4343)
+ ,Finger_type(tipposition) TYPE_RING(20.6607, 89.0949, 81.8152)
+ ,Finger_type(tipposition) TYPE_PINKY(34.0402, 94.3521, 85.4911)
+Frame.id:  462288,Timestamp: 700870548632, Hand_number: 1
+ ,hand_Id_type: 416right hand ,hand_finger's_number:1,hand direction: (0.244083, 0.48508, -0.839715) ,Palm position: (19.0895, 130.446, 83.7042) ,Palm normal: (-0.0124992, -0.864259, -0.502892)
+ ,Finger_type(tipposition) TYPE_INDEX(14.5846, 147.394, -11.8419)
+ ,Finger_type(tipposition) TYPE_THUMB(6.4429, 93.5964, 34.8704)
+ ,Finger_type(tipposition) TYPE_MIDDLE(7.08813, 94.8245, 74.7992)
+ ,Finger_type(tipposition) TYPE_RING(20.348, 93.0569, 81.1891)
+ ,Finger_type(tipposition) TYPE_PINKY(33.6401, 98.4511, 84.9764)
+Frame.id:  462289,Timestamp: 700870582650, Hand_number: 1
+ ,hand_Id_type: 416right hand ,hand_finger's_number:1,hand direction: (0.196054, 0.593912, -0.780277) ,Palm position: (9.71249, 160.689, 83.2097) ,Palm normal: (0.0899386, -0.803256, -0.588804)
+ ,Finger_type(tipposition) TYPE_INDEX(4.28928, 187.039, -10.1406)
+ ,Finger_type(tipposition) TYPE_THUMB(2.12351, 127.881, 30.7155)
+ ,Finger_type(tipposition) TYPE_MIDDLE(1.89252, 125.04, 70.3686)
+ ,Finger_type(tipposition) TYPE_RING(15.2253, 124.14, 76.7483)
+ ,Finger_type(tipposition) TYPE_PINKY(27.7565, 130.517, 81.3286)
+Frame.id:  462290,Timestamp: 700870603279, Hand_number: 1
+ ,hand_Id_type: 416right hand ,hand_finger's_number:1,hand direction: (0.170977, 0.624683, -0.76193) ,Palm position: (5.02432, 170.909, 83.7556) ,Palm normal: (0.133491, -0.780874, -0.610259)
+ ,Finger_type(tipposition) TYPE_INDEX(-1.12246, 199.666, -8.83986)
+ ,Finger_type(tipposition) TYPE_THUMB(-0.466991, 139.238, 30.3546)
+ ,Finger_type(tipposition) TYPE_MIDDLE(-0.920239, 135.262, 69.7482)
+ ,Finger_type(tipposition) TYPE_RING(12.3954, 134.879, 76.2809)
+ ,Finger_type(tipposition) TYPE_PINKY(24.5592, 141.72, 81.0529)
+Frame.id:  462291,Timestamp: 700870621661, Hand_number: 1
+ ,hand_Id_type: 416right hand ,hand_finger's_number:1,hand direction: (0.148813, 0.651415, -0.743985) ,Palm position: (0.485271, 180.291, 83.7836) ,Palm normal: (0.146674, -0.75858, -0.634856)
+ ,Finger_type(tipposition) TYPE_INDEX(-7.18349, 211.819, -7.79445)
+ ,Finger_type(tipposition) TYPE_THUMB(-4.60736, 150.108, 29.5305)
+ ,Finger_type(tipposition) TYPE_MIDDLE(-4.71609, 144.921, 68.6148)
+ ,Finger_type(tipposition) TYPE_RING(8.65987, 144.704, 75.0896)
+ ,Finger_type(tipposition) TYPE_PINKY(20.69, 151.676, 79.8825)
+Frame.id:  462292,Timestamp: 700870645317, Hand_number: 1
+ ,hand_Id_type: 416right hand ,hand_finger's_number:1,hand direction: (0.124809, 0.680893, -0.72167) ,Palm position: (-5.48226, 190.787, 83.7812) ,Palm normal: (0.166008, -0.731435, -0.661396)
+ ,Finger_type(tipposition) TYPE_INDEX(-14.5974, 225.405, -6.54683)
+ ,Finger_type(tipposition) TYPE_THUMB(-9.83455, 162.336, 28.5789)
+ ,Finger_type(tipposition) TYPE_MIDDLE(-9.69042, 155.794, 67.3285)
+ ,Finger_type(tipposition) TYPE_RING(3.73258, 155.809, 73.679)
+ ,Finger_type(tipposition) TYPE_PINKY(15.5323, 162.968, 78.6092)
+Frame.id:  462293,Timestamp: 700870661405, Hand_number: 1
+ ,hand_Id_type: 416right hand ,hand_finger's_number:1,hand direction: (0.108418, 0.700463, -0.705406) ,Palm position: (-10.3995, 198.292, 83.5889) ,Palm normal: (0.173958, -0.712008, -0.680282)
+ ,Finger_type(tipposition) TYPE_INDEX(-20.6913, 235.101, -5.74596)
+ ,Finger_type(tipposition) TYPE_THUMB(-14.5565, 171.128, 27.7528)
+ ,Finger_type(tipposition) TYPE_MIDDLE(-14.1159, 163.63, 66.1971)
+ ,Finger_type(tipposition) TYPE_RING(-0.666006, 163.753, 72.4737)
+ ,Finger_type(tipposition) TYPE_PINKY(11.0288, 170.981, 77.4889)
+Frame.id:  462294,Timestamp: 700870680638, Hand_number: 1
+ ,hand_Id_type: 416right hand ,hand_finger's_number:1,hand direction: (0.0837262, 0.714229, -0.694886) ,Palm position: (-15.8616, 205.551, 83.8567) ,Palm normal: (0.156028, -0.69813, -0.698763)
+ ,Finger_type(tipposition) TYPE_INDEX(-29.025, 244.188, -4.32709)
+ ,Finger_type(tipposition) TYPE_THUMB(-21.5189, 179.421, 27.6898)
+ ,Finger_type(tipposition) TYPE_MIDDLE(-19.9443, 171.2, 65.596)
+ ,Finger_type(tipposition) TYPE_RING(-6.33587, 171.302, 71.6564)
+ ,Finger_type(tipposition) TYPE_PINKY(5.45963, 178.495, 76.3148)
+Frame.id:  462295,Timestamp: 700870703529, Hand_number: 1
+ ,hand_Id_type: 416right hand ,hand_finger's_number:1,hand direction: (0.0678935, 0.732924, -0.676914) ,Palm position: (-22.525, 213.251, 82.9596) ,Palm normal: (0.180079, -0.676338, -0.714239)
+ ,Finger_type(tipposition) TYPE_INDEX(-36.2062, 253.813, -4.28212)
+ ,Finger_type(tipposition) TYPE_THUMB(-27.0025, 188.335, 26.1649)
+ ,Finger_type(tipposition) TYPE_MIDDLE(-25.5037, 179.264, 63.5396)
+ ,Finger_type(tipposition) TYPE_RING(-11.9697, 179.596, 69.9594)
+ ,Finger_type(tipposition) TYPE_PINKY(-0.430451, 186.998, 74.8307)
+Frame.id:  462296,Timestamp: 700870752332, Hand_number: 1
+ ,hand_Id_type: 416right hand ,hand_finger's_number:1,hand direction: (0.0123326, 0.74229, -0.669965) ,Palm position: (-33.954, 223.031, 82.6098) ,Palm normal: (0.153145, -0.663513, -0.732323)
+ ,Finger_type(tipposition) TYPE_INDEX(-53.5366, 264.627, -3.01581)
+ ,Finger_type(tipposition) TYPE_THUMB(-41.0756, 198.692, 25.8636)
+ ,Finger_type(tipposition) TYPE_MIDDLE(-37.3078, 189.233, 62.6479)
+ ,Finger_type(tipposition) TYPE_RING(-23.4524, 189.789, 68.5067)
+ ,Finger_type(tipposition) TYPE_PINKY(-11.8451, 197.392, 72.6537)
+Frame.id:  462297,Timestamp: 700870759569, Hand_number: 1
+ ,hand_Id_type: 416right hand ,hand_finger's_number:1,hand direction: (0.00423693, 0.739631, -0.673) ,Palm position: (-35.9025, 223.794, 82.6469) ,Palm normal: (0.146985, -0.666157, -0.731185)
+ ,Finger_type(tipposition) TYPE_INDEX(-56.4168, 265.075, -2.91561)
+ ,Finger_type(tipposition) TYPE_THUMB(-43.5334, 199.216, 26.0755)
+ ,Finger_type(tipposition) TYPE_MIDDLE(-39.3955, 189.911, 62.8041)
+ ,Finger_type(tipposition) TYPE_RING(-25.4867, 190.52, 68.5493)
+ ,Finger_type(tipposition) TYPE_PINKY(-13.8545, 198.154, 72.5547)
+Frame.id:  462298,Timestamp: 700870779131, Hand_number: 1
+ ,hand_Id_type: 416right hand ,hand_finger's_number:1,hand direction: (-0.0199884, 0.736105, -0.676572) ,Palm position: (-42.689, 225.787, 82.3096) ,Palm normal: (0.13261, -0.668776, -0.731541)
+ ,Finger_type(tipposition) TYPE_INDEX(-65.8038, 266.953, -2.66516)
+ ,Finger_type(tipposition) TYPE_THUMB(-51.5614, 200.849, 26.1028)
+ ,Finger_type(tipposition) TYPE_MIDDLE(-46.4468, 191.76, 62.4299)
+ ,Finger_type(tipposition) TYPE_RING(-32.416, 192.53, 67.9646)
+ ,Finger_type(tipposition) TYPE_PINKY(-20.7457, 200.249, 71.7547)
+Frame.id:  462299,Timestamp: 700870807402, Hand_number: 1
+ ,hand_Id_type: 416right hand ,hand_finger's_number:1,hand direction: (-0.0409354, 0.72931, -0.682957) ,Palm position: (-48.4116, 226.512, 81.8765) ,Palm normal: (0.129566, -0.673884, -0.727387)
+ ,Finger_type(tipposition) TYPE_INDEX(-73.4407, 266.849, -2.96381)
+ ,Finger_type(tipposition) TYPE_THUMB(-57.8041, 200.923, 26.067)
+ ,Finger_type(tipposition) TYPE_MIDDLE(-52.047, 192.253, 62.0914)
+ ,Finger_type(tipposition) TYPE_RING(-37.9532, 193.255, 67.6062)
+ ,Finger_type(tipposition) TYPE_PINKY(-26.3308, 201.168, 71.1076)
+Frame.id:  462300,Timestamp: 700870838013, Hand_number: 1
+ ,hand_Id_type: 416right hand ,hand_finger's_number:1,hand direction: (-0.0595416, 0.719691, -0.691737) ,Palm position: (-57.0281, 225.497, 81.2945) ,Palm normal: (0.130016, -0.681472, -0.720202)
+ ,Finger_type(tipposition) TYPE_INDEX(-83.6544, 264.547, -3.66803)
+ ,Finger_type(tipposition) TYPE_THUMB(-66.6975, 199.053, 25.9478)
+ ,Finger_type(tipposition) TYPE_MIDDLE(-60.4359, 190.935, 61.8004)
+ ,Finger_type(tipposition) TYPE_RING(-46.2933, 192.199, 67.3086)
+ ,Finger_type(tipposition) TYPE_PINKY(-34.7538, 200.319, 70.508)
+Frame.id:  462301,Timestamp: 700870857787, Hand_number: 1
+ ,hand_Id_type: 416right hand ,hand_finger's_number:1,hand direction: (-0.0676337, 0.707793, -0.703175) ,Palm position: (-61.2096, 224.757, 80.936) ,Palm normal: (0.129612, -0.692583, -0.709598)
+ ,Finger_type(tipposition) TYPE_INDEX(-88.5534, 262.398, -4.44177)
+ ,Finger_type(tipposition) TYPE_THUMB(-71.0199, 197.346, 26.097)
+ ,Finger_type(tipposition) TYPE_MIDDLE(-64.5437, 189.855, 61.9169)
+ ,Finger_type(tipposition) TYPE_RING(-50.378, 191.286, 67.4312)
+ ,Finger_type(tipposition) TYPE_PINKY(-38.888, 199.499, 70.459)
+Frame.id:  462302,Timestamp: 700870877463, Hand_number: 1
+ ,hand_Id_type: 416right hand ,hand_finger's_number:1,hand direction: (-0.0698107, 0.677437, -0.73226) ,Palm position: (-64.0851, 223.324, 80.0344) ,Palm normal: (0.104526, -0.725043, -0.680726)
+ ,Finger_type(tipposition) TYPE_INDEX(-92.4774, 257.983, -6.28099)
+ ,Finger_type(tipposition) TYPE_THUMB(-75.3629, 193.714, 26.6529)
+ ,Finger_type(tipposition) TYPE_MIDDLE(-68.3634, 187.679, 62.509)
+ ,Finger_type(tipposition) TYPE_RING(-54.075, 189.109, 67.808)
+ ,Finger_type(tipposition) TYPE_PINKY(-42.4076, 197.237, 70.2428)
+Frame.id:  462303,Timestamp: 700870897221, Hand_number: 1
+ ,hand_Id_type: 416right hand ,hand_finger's_number:1,hand direction: (-0.0744806, 0.652728, -0.753922) ,Palm position: (-66.6539, 222.076, 79.3308) ,Palm normal: (0.0905096, -0.748477, -0.656955)
+ ,Finger_type(tipposition) TYPE_INDEX(-95.9268, 254.347, -7.64038)
+ ,Finger_type(tipposition) TYPE_THUMB(-78.7954, 190.757, 27.1385)
+ ,Finger_type(tipposition) TYPE_MIDDLE(-71.4225, 185.879, 62.9722)
+ ,Finger_type(tipposition) TYPE_RING(-57.0702, 187.373, 68.1694)
+ ,Finger_type(tipposition) TYPE_PINKY(-45.3357, 195.465, 70.2021)
+Frame.id:  462304,Timestamp: 700870916825, Hand_number: 1
+ ,hand_Id_type: 416right hand ,hand_finger's_number:1,hand direction: (-0.0724981, 0.604231, -0.793504) ,Palm position: (-68.957, 218.228, 77.6751) ,Palm normal: (0.0571483, -0.791774, -0.608135)
+ ,Finger_type(tipposition) TYPE_INDEX(-99.1533, 246.17, -10.5197)
+ ,Finger_type(tipposition) TYPE_THUMB(-77.6696, 183.671, 28.3722)
+ ,Finger_type(tipposition) TYPE_MIDDLE(-75.0293, 181.177, 63.7169)
+ ,Finger_type(tipposition) TYPE_RING(-60.5424, 182.613, 68.6246)
+ ,Finger_type(tipposition) TYPE_PINKY(-48.5871, 190.463, 69.949)
+Frame.id:  462305,Timestamp: 700870945834, Hand_number: 1
+ ,hand_Id_type: 416right hand ,hand_finger's_number:1,hand direction: (-0.070053, 0.585781, -0.807436) ,Palm position: (-72.2994, 212.049, 76.6216) ,Palm normal: (0.0422523, -0.806956, -0.589099)
+ ,Finger_type(tipposition) TYPE_INDEX(-102.779, 239.19, -11.809)
+ ,Finger_type(tipposition) TYPE_THUMB(-77.7842, 176.182, 28.5838)
+ ,Finger_type(tipposition) TYPE_MIDDLE(-78.9646, 174.748, 63.6122)
+ ,Finger_type(tipposition) TYPE_RING(-64.4395, 176.107, 68.3753)
+ ,Finger_type(tipposition) TYPE_PINKY(-52.398, 183.801, 69.4743)
+Frame.id:  462306,Timestamp: 700870956110, Hand_number: 1
+ ,hand_Id_type: 416right hand ,hand_finger's_number:1,hand direction: (-0.0689075, 0.567485, -0.820495) ,Palm position: (-73.1205, 209.353, 76.6144) ,Palm normal: (0.00608387, -0.822196, -0.569172)
+ ,Finger_type(tipposition) TYPE_INDEX(-104.562, 235.631, -11.7775)
+ ,Finger_type(tipposition) TYPE_THUMB(-79.9845, 172.432, 29.6637)
+ ,Finger_type(tipposition) TYPE_MIDDLE(-81.1559, 171.943, 64.7424)
+ ,Finger_type(tipposition) TYPE_RING(-66.5152, 172.992, 69.1266)
+ ,Finger_type(tipposition) TYPE_PINKY(-54.2303, 180.34, 69.7956)
+Frame.id:  462307,Timestamp: 700870976256, Hand_number: 1
+ ,hand_Id_type: 416right hand ,hand_finger's_number:1,hand direction: (-0.0671573, 0.536671, -0.841115) ,Palm position: (-74.676, 202.376, 75.3602) ,Palm normal: (-0.0381103, -0.843783, -0.53533)
+ ,Finger_type(tipposition) TYPE_INDEX(-107.141, 227.246, -13.1531)
+ ,Finger_type(tipposition) TYPE_THUMB(-72.5325, 162.748, 32.9384)
+ ,Finger_type(tipposition) TYPE_MIDDLE(-84.3646, 164.822, 65.325)
+ ,Finger_type(tipposition) TYPE_RING(-69.6261, 165.513, 69.2037)
+ ,Finger_type(tipposition) TYPE_PINKY(-57.0633, 172.407, 69.3043)
+Frame.id:  462308,Timestamp: 700870996415, Hand_number: 1
+ ,hand_Id_type: 416right hand ,hand_finger's_number:1,hand direction: (-0.0611425, 0.529907, -0.845849) ,Palm position: (-76.0467, 195.443, 74.8376) ,Palm normal: (-0.0530763, -0.847961, -0.527394)
+ ,Finger_type(tipposition) TYPE_INDEX(-108.313, 220.692, -13.7044)
+ ,Finger_type(tipposition) TYPE_THUMB(-71.2368, 155.117, 33.4871)
+ ,Finger_type(tipposition) TYPE_MIDDLE(-86.3485, 157.934, 65.2612)
+ ,Finger_type(tipposition) TYPE_RING(-71.6182, 158.445, 68.98)
+ ,Finger_type(tipposition) TYPE_PINKY(-58.9403, 165.138, 69.0031)
+Frame.id:  462309,Timestamp: 700871015158, Hand_number: 1
+ ,hand_Id_type: 416right hand ,hand_finger's_number:1,hand direction: (-0.0510707, 0.498496, -0.865386) ,Palm position: (-76.5498, 190.488, 74.2635) ,Palm normal: (-0.0723634, -0.866086, -0.494629)
+ ,Finger_type(tipposition) TYPE_INDEX(-108.375, 213.368, -15.1114)
+ ,Finger_type(tipposition) TYPE_THUMB(-71.9681, 148.451, 34.6274)
+ ,Finger_type(tipposition) TYPE_MIDDLE(-87.6637, 152.872, 66.24)
+ ,Finger_type(tipposition) TYPE_RING(-72.9521, 153.2, 69.7915)
+ ,Finger_type(tipposition) TYPE_PINKY(-60.1317, 159.61, 69.5584)
+Frame.id:  462310,Timestamp: 700871034746, Hand_number: 1
+ ,hand_Id_type: 416right hand ,hand_finger's_number:1,hand direction: (-0.0557055, 0.486914, -0.871672) ,Palm position: (-75.7479, 182.875, 74.1867) ,Palm normal: (-0.0758849, -0.872567, -0.482564)
+ ,Finger_type(tipposition) TYPE_INDEX(-108.039, 204.985, -15.2568)
+ ,Finger_type(tipposition) TYPE_THUMB(-71.2474, 140.292, 35.1213)
+ ,Finger_type(tipposition) TYPE_MIDDLE(-86.8854, 145.124, 67.1215)
+ ,Finger_type(tipposition) TYPE_RING(-72.2213, 145.524, 70.1683)
+ ,Finger_type(tipposition) TYPE_PINKY(-59.3945, 151.919, 69.7949)
+Frame.id:  462311,Timestamp: 700871054503, Hand_number: 1
+ ,hand_Id_type: 416right hand ,hand_finger's_number:1,hand direction: (-0.0578739, 0.464338, -0.883765) ,Palm position: (-75.3121, 177.001, 73.5546) ,Palm normal: (-0.0805956, -0.884532, -0.459464)
+ ,Finger_type(tipposition) TYPE_INDEX(-107.885, 197.15, -16.2765)
+ ,Finger_type(tipposition) TYPE_THUMB(-71.0503, 133.418, 35.5833)
+ ,Finger_type(tipposition) TYPE_MIDDLE(-86.5305, 139.077, 67.9527)
+ ,Finger_type(tipposition) TYPE_RING(-71.9291, 139.539, 70.4856)
+ ,Finger_type(tipposition) TYPE_PINKY(-59.0912, 145.882, 69.8757)
+Frame.id:  462312,Timestamp: 700871074113, Hand_number: 1
+ ,hand_Id_type: 416right hand ,hand_finger's_number:1,hand direction: (-0.0579379, 0.453918, -0.889158) ,Palm position: (-74.3535, 170.486, 73.4378) ,Palm normal: (-0.0820197, -0.889807, -0.448905)
+ ,Finger_type(tipposition) TYPE_INDEX(-106.939, 189.809, -16.5892)
+ ,Finger_type(tipposition) TYPE_THUMB(-70.1466, 126.474, 35.9529)
+ ,Finger_type(tipposition) TYPE_MIDDLE(-85.591, 132.514, 68.4798)
+ ,Finger_type(tipposition) TYPE_RING(-71.0301, 132.979, 70.8046)
+ ,Finger_type(tipposition) TYPE_PINKY(-58.1992, 139.294, 70.063)
+Frame.id:  462313,Timestamp: 700871093800, Hand_number: 1
+ ,hand_Id_type: 416right hand ,hand_finger's_number:1,hand direction: (-0.0543519, 0.444322, -0.894217) ,Palm position: (-73.0889, 163.425, 73.9003) ,Palm normal: (-0.0767692, -0.894749, -0.43992)
+ ,Finger_type(tipposition) TYPE_INDEX(-105.202, 181.915, -16.4939)
+ ,Finger_type(tipposition) TYPE_THUMB(-68.4807, 119.077, 36.9014)
+ ,Finger_type(tipposition) TYPE_MIDDLE(-84.1783, 125.371, 69.2994)
+ ,Finger_type(tipposition) TYPE_RING(-69.6496, 125.895, 71.6676)
+ ,Finger_type(tipposition) TYPE_PINKY(-56.8417, 132.24, 70.9091)
+Frame.id:  462314,Timestamp: 700871113472, Hand_number: 1
+ ,hand_Id_type: 416right hand ,hand_finger's_number:1,hand direction: (-0.0487016, 0.429098, -0.901944) ,Palm position: (-71.834, 157.142, 73.557) ,Palm normal: (-0.0799194, -0.901794, -0.424712)
+ ,Finger_type(tipposition) TYPE_INDEX(-103.485, 174.434, -17.2564)
+ ,Finger_type(tipposition) TYPE_THUMB(-67.4021, 112.292, 37.2833)
+ ,Finger_type(tipposition) TYPE_MIDDLE(-83.102, 119.087, 69.5996)
+ ,Finger_type(tipposition) TYPE_RING(-68.5999, 119.554, 71.9706)
+ ,Finger_type(tipposition) TYPE_PINKY(-55.763, 125.812, 71.1217)
+Frame.id:  462315,Timestamp: 700871133102, Hand_number: 1
+ ,hand_Id_type: 416right hand ,hand_finger's_number:1,hand direction: (-0.0489131, 0.419087, -0.906628) ,Palm position: (-69.8424, 150.613, 73.8045) ,Palm normal: (-0.0645218, -0.907144, -0.415845)
+ ,Finger_type(tipposition) TYPE_INDEX(-101.127, 166.695, -17.3764)
+ ,Finger_type(tipposition) TYPE_THUMB(-65.0596, 105.801, 37.7963)
+ ,Finger_type(tipposition) TYPE_MIDDLE(-80.5325, 112.401, 70.246)
+ ,Finger_type(tipposition) TYPE_RING(-66.0834, 113.051, 72.6132)
+ ,Finger_type(tipposition) TYPE_PINKY(-53.34, 119.474, 71.7398)
+Frame.id:  462316,Timestamp: 700871152874, Hand_number: 1
+ ,hand_Id_type: 416right hand ,hand_finger's_number:1,hand direction: (-0.0478868, 0.405947, -0.912641) ,Palm position: (-67.6928, 144.32, 74.5405) ,Palm normal: (-0.0590242, -0.913243, -0.403118)
+ ,Finger_type(tipposition) TYPE_INDEX(-98.7346, 159.091, -16.9584)
+ ,Finger_type(tipposition) TYPE_THUMB(-62.6284, 99.1848, 39.3584)
+ ,Finger_type(tipposition) TYPE_MIDDLE(-78.1874, 106.033, 71.535)
+ ,Finger_type(tipposition) TYPE_RING(-63.7669, 106.756, 73.886)
+ ,Finger_type(tipposition) TYPE_PINKY(-51.0645, 113.207, 72.8792)
+Frame.id:  462317,Timestamp: 700871172462, Hand_number: 1
+ ,hand_Id_type: 416right hand ,hand_finger's_number:1,hand direction: (-0.0395452, 0.381198, -0.923647) ,Palm position: (-65.5331, 139.671, 75.4468) ,Palm normal: (-0.0748939, -0.922901, -0.377683)
+ ,Finger_type(tipposition) TYPE_INDEX(-96.1944, 152.467, -16.4799)
+ ,Finger_type(tipposition) TYPE_THUMB(-61.3894, 93.7092, 41.6313)
+ ,Finger_type(tipposition) TYPE_MIDDLE(-76.6794, 101.578, 73.6383)
+ ,Finger_type(tipposition) TYPE_RING(-62.293, 102.03, 75.8239)
+ ,Finger_type(tipposition) TYPE_PINKY(-49.4828, 108.211, 74.6034)
+Frame.id:  462318,Timestamp: 700871192080, Hand_number: 1
+ ,hand_Id_type: 416right hand ,hand_finger's_number:1,hand direction: (-0.0384704, 0.36812, -0.928982) ,Palm position: (-63.0995, 134.089, 76.3583) ,Palm normal: (-0.0703243, -0.928363, -0.364962)
+ ,Finger_type(tipposition) TYPE_INDEX(-93.555, 145.491, -15.8211)
+ ,Finger_type(tipposition) TYPE_THUMB(-59.0641, 88.0021, 43.2248)
+ ,Finger_type(tipposition) TYPE_MIDDLE(-74.0762, 95.9896, 75.136)
+ ,Finger_type(tipposition) TYPE_RING(-59.7498, 96.4387, 77.1782)
+ ,Finger_type(tipposition) TYPE_PINKY(-46.9483, 102.65, 75.8674)
+Frame.id:  462319,Timestamp: 700871211842, Hand_number: 1
+ ,hand_Id_type: 416right hand ,hand_finger's_number:1,hand direction: (-0.0391294, 0.358003, -0.9329) ,Palm position: (-60.0951, 128.265, 77.8217) ,Palm normal: (-0.0688421, -0.932363, -0.354909)
+ ,Finger_type(tipposition) TYPE_INDEX(-90.5724, 138.632, -14.4742)
+ ,Finger_type(tipposition) TYPE_THUMB(-56.6638, 82.3153, 45.1375)
+ ,Finger_type(tipposition) TYPE_MIDDLE(-71.0036, 90.1624, 77.0347)
+ ,Finger_type(tipposition) TYPE_RING(-56.7148, 90.6022, 78.9593)
+ ,Finger_type(tipposition) TYPE_PINKY(-43.9164, 96.8104, 77.5091)
+Frame.id:  462320,Timestamp: 700871231483, Hand_number: 1
+ ,hand_Id_type: 416right hand ,hand_finger's_number:1,hand direction: (-0.0355664, 0.346974, -0.9372) ,Palm position: (-57.1083, 122.868, 78.9104) ,Palm normal: (-0.0727719, -0.936203, -0.343843)
+ ,Finger_type(tipposition) TYPE_INDEX(-87.3496, 132.292, -13.5664)
+ ,Finger_type(tipposition) TYPE_THUMB(-54.6254, 77.027, 46.665)
+ ,Finger_type(tipposition) TYPE_MIDDLE(-68.2033, 84.8209, 78.5545)
+ ,Finger_type(tipposition) TYPE_RING(-53.9612, 85.1518, 80.3214)
+ ,Finger_type(tipposition) TYPE_PINKY(-41.104, 91.3021, 78.8901)
+Frame.id:  462321,Timestamp: 700871251313, Hand_number: 1
+ ,hand_Id_type: 416right hand ,hand_finger's_number:1,hand direction: (-0.0325247, 0.335921, -0.941328) ,Palm position: (-53.9562, 117.953, 80.1262) ,Palm normal: (-0.073789, -0.940063, -0.33292)
+ ,Finger_type(tipposition) TYPE_INDEX(-83.9377, 126.356, -12.5364)
+ ,Finger_type(tipposition) TYPE_THUMB(-52.1961, 72.2219, 48.3165)
+ ,Finger_type(tipposition) TYPE_MIDDLE(-65.1259, 79.9377, 80.1728)
+ ,Finger_type(tipposition) TYPE_RING(-50.9325, 80.1939, 81.7974)
+ ,Finger_type(tipposition) TYPE_PINKY(-38.042, 86.323, 80.357)
+Frame.id:  462322,Timestamp: 700871271174, Hand_number: 1
+ ,hand_Id_type: 416right hand ,hand_finger's_number:1,hand direction: (-0.0226929, 0.322989, -0.94613) ,Palm position: (-50.8365, 113.8, 81.0458) ,Palm normal: (-0.0809178, -0.943863, -0.320274)
+ ,Finger_type(tipposition) TYPE_INDEX(-80.0883, 121.214, -11.9371)
+ ,Finger_type(tipposition) TYPE_THUMB(-49.7166, 68.0584, 49.8232)
+ ,Finger_type(tipposition) TYPE_MIDDLE(-62.4004, 75.8734, 81.4798)
+ ,Finger_type(tipposition) TYPE_RING(-48.2285, 76.0118, 83.1736)
+ ,Finger_type(tipposition) TYPE_PINKY(-35.2919, 81.9889, 81.6135)
+Frame.id:  462323,Timestamp: 700871290774, Hand_number: 1
+ ,hand_Id_type: 416right hand ,hand_finger's_number:1,hand direction: (-0.0140062, 0.3128, -0.949716) ,Palm position: (-47.3109, 110.193, 82.0184) ,Palm normal: (-0.0880096, -0.946508, -0.310446)
+ ,Finger_type(tipposition) TYPE_INDEX(-75.9297, 116.877, -11.2191)
+ ,Finger_type(tipposition) TYPE_THUMB(-46.8536, 64.5629, 51.1924)
+ ,Finger_type(tipposition) TYPE_MIDDLE(-59.3096, 72.2378, 82.3904)
+ ,Finger_type(tipposition) TYPE_RING(-45.1136, 72.3486, 84.3852)
+ ,Finger_type(tipposition) TYPE_PINKY(-32.0934, 78.2258, 82.9324)
+Frame.id:  462324,Timestamp: 700871310506, Hand_number: 1
+ ,hand_Id_type: 416right hand ,hand_finger's_number:1,hand direction: (-0.0009103, 0.297711, -0.954656) ,Palm position: (-43.4328, 107.275, 83.4117) ,Palm normal: (-0.107052, -0.949199, -0.295907)
+ ,Finger_type(tipposition) TYPE_INDEX(-71.2848, 113.103, -10.1173)
+ ,Finger_type(tipposition) TYPE_THUMB(-44.6073, 61.8872, 53.0337)
+ ,Finger_type(tipposition) TYPE_MIDDLE(-56.3052, 69.5316, 84.1847)
+ ,Finger_type(tipposition) TYPE_RING(-42.1435, 69.3411, 86.0724)
+ ,Finger_type(tipposition) TYPE_PINKY(-28.9598, 74.9551, 84.7423)
+Frame.id:  462325,Timestamp: 700871330042, Hand_number: 1
+ ,hand_Id_type: 416right hand ,hand_finger's_number:1,hand direction: (0.00794583, 0.284255, -0.958716) ,Palm position: (-39.4068, 105.314, 84.5426) ,Palm normal: (-0.125406, -0.950893, -0.282975)
+ ,Finger_type(tipposition) TYPE_INDEX(-66.8425, 110.405, -9.15359)
+ ,Finger_type(tipposition) TYPE_THUMB(-42.4292, 60.4119, 54.4106)
+ ,Finger_type(tipposition) TYPE_MIDDLE(-53.0806, 67.7602, 85.6244)
+ ,Finger_type(tipposition) TYPE_RING(-38.9283, 67.3496, 87.5646)
+ ,Finger_type(tipposition) TYPE_PINKY(-25.6065, 72.65, 86.0465)
+Frame.id:  462326,Timestamp: 700871349980, Hand_number: 1
+ ,hand_Id_type: 416right hand ,hand_finger's_number:1,hand direction: (0.0168816, 0.295261, -0.955268) ,Palm position: (-35.6169, 102.733, 84.6855) ,Palm normal: (-0.0909594, -0.950989, -0.295546)
+ ,Finger_type(tipposition) TYPE_INDEX(-61.4531, 108.067, -9.45212)
+ ,Finger_type(tipposition) TYPE_THUMB(-38.3559, 59.5513, 53.4198)
+ ,Finger_type(tipposition) TYPE_MIDDLE(-48.231, 64.5782, 84.5919)
+ ,Finger_type(tipposition) TYPE_RING(-34.0561, 64.7143, 87.1211)
+ ,Finger_type(tipposition) TYPE_PINKY(-20.8483, 70.4441, 85.9427)
+Frame.id:  462327,Timestamp: 700871369644, Hand_number: 1
+ ,hand_Id_type: 416right hand ,hand_finger's_number:1,hand direction: (0.0242738, 0.296757, -0.954645) ,Palm position: (-31.435, 101.218, 84.9163) ,Palm normal: (-0.0846631, -0.950885, -0.297741)
+ ,Finger_type(tipposition) TYPE_INDEX(-56.4351, 106.614, -9.4445)
+ ,Finger_type(tipposition) TYPE_THUMB(-34.804, 59.1756, 53.1247)
+ ,Finger_type(tipposition) TYPE_MIDDLE(-43.9557, 62.8791, 84.2887)
+ ,Finger_type(tipposition) TYPE_RING(-29.7815, 63.1027, 86.9377)
+ ,Finger_type(tipposition) TYPE_PINKY(-16.5502, 68.9444, 86.1115)
+Frame.id:  462328,Timestamp: 700871389042, Hand_number: 1
+ ,hand_Id_type: 416right hand ,hand_finger's_number:1,hand direction: (0.0338678, 0.292792, -0.955576) ,Palm position: (-27.4704, 100.668, 85.2803) ,Palm normal: (-0.0853667, -0.951783, -0.294655)
+ ,Finger_type(tipposition) TYPE_INDEX(-51.5846, 105.798, -9.32682)
+ ,Finger_type(tipposition) TYPE_THUMB(-31.5734, 59.3954, 53.2689)
+ ,Finger_type(tipposition) TYPE_MIDDLE(-40.1747, 62.2326, 84.2725)
+ ,Finger_type(tipposition) TYPE_RING(-25.993, 62.4907, 87.2262)
+ ,Finger_type(tipposition) TYPE_PINKY(-12.7051, 68.2884, 86.4784)
+Frame.id:  462329,Timestamp: 700871408658, Hand_number: 1
+ ,hand_Id_type: 416right hand ,hand_finger's_number:1,hand direction: (0.043756, 0.291229, -0.955652) ,Palm position: (-23.6811, 100.543, 85.6383) ,Palm normal: (-0.0896618, -0.951563, -0.294089)
+ ,Finger_type(tipposition) TYPE_INDEX(-46.9514, 105.768, -9.17789)
+ ,Finger_type(tipposition) TYPE_THUMB(-28.478, 60.0001, 53.375)
+ ,Finger_type(tipposition) TYPE_MIDDLE(-36.7146, 62.0175, 83.9757)
+ ,Finger_type(tipposition) TYPE_RING(-22.5082, 62.2997, 87.4253)
+ ,Finger_type(tipposition) TYPE_PINKY(-9.15191, 68.0098, 86.749)
+Frame.id:  462330,Timestamp: 700871428489, Hand_number: 1
+ ,hand_Id_type: 416right hand ,hand_finger's_number:1,hand direction: (0.0522145, 0.28982, -0.955656) ,Palm position: (-20.0716, 100.723, 86.1622) ,Palm normal: (-0.0841617, -0.95228, -0.293395)
+ ,Finger_type(tipposition) TYPE_INDEX(-42.3939, 105.823, -8.89408)
+ ,Finger_type(tipposition) TYPE_THUMB(-25.3519, 61.0561, 53.5474)
+ ,Finger_type(tipposition) TYPE_MIDDLE(-33.0299, 62.0104, 83.9179)
+ ,Finger_type(tipposition) TYPE_RING(-18.8249, 62.3837, 87.594)
+ ,Finger_type(tipposition) TYPE_PINKY(-5.45412, 68.1885, 87.2594)
+Frame.id:  462331,Timestamp: 700871447973, Hand_number: 1
+ ,hand_Id_type: 416right hand ,hand_finger's_number:1,hand direction: (0.0595263, 0.289043, -0.955464) ,Palm position: (-16.7728, 101.124, 86.6543) ,Palm normal: (-0.0826516, -0.952447, -0.29328)
+ ,Finger_type(tipposition) TYPE_INDEX(-38.3362, 106.291, -8.58209)
+ ,Finger_type(tipposition) TYPE_THUMB(-22.9002, 62.4701, 53.6492)
+ ,Finger_type(tipposition) TYPE_MIDDLE(-29.7879, 62.2843, 83.8508)
+ ,Finger_type(tipposition) TYPE_RING(-15.5729, 62.6879, 87.7209)
+ ,Finger_type(tipposition) TYPE_PINKY(-2.16964, 68.5264, 87.6279)
+Frame.id:  462332,Timestamp: 700871468056, Hand_number: 1
+ ,hand_Id_type: 416right hand ,hand_finger's_number:1,hand direction: (0.0646453, 0.288204, -0.955384) ,Palm position: (-13.9254, 101.806, 87.0625) ,Palm normal: (-0.0781999, -0.95298, -0.29277)
+ ,Finger_type(tipposition) TYPE_INDEX(-34.8534, 106.997, -8.32771)
+ ,Finger_type(tipposition) TYPE_THUMB(-20.8101, 64.134, 53.7328)
+ ,Finger_type(tipposition) TYPE_MIDDLE(-26.8614, 62.7729, 83.5875)
+ ,Finger_type(tipposition) TYPE_RING(-12.6296, 63.273, 87.7442)
+ ,Finger_type(tipposition) TYPE_PINKY(0.782541, 69.191, 87.8704)
+Frame.id:  462333,Timestamp: 700871487527, Hand_number: 1
+ ,hand_Id_type: 416right hand ,hand_finger's_number:1,hand direction: (0.0678122, 0.288759, -0.954997) ,Palm position: (-11.7392, 102.734, 87.2938) ,Palm normal: (-0.070422, -0.953428, -0.293285)
+ ,Finger_type(tipposition) TYPE_INDEX(-32.1239, 108.03, -8.22337)
+ ,Finger_type(tipposition) TYPE_THUMB(-19.0028, 65.8104, 53.6937)
+ ,Finger_type(tipposition) TYPE_MIDDLE(-24.4449, 63.4696, 83.0908)
+ ,Finger_type(tipposition) TYPE_RING(-10.1948, 64.1298, 87.6378)
+ ,Finger_type(tipposition) TYPE_PINKY(3.196, 70.1635, 87.8867)
+Frame.id:  462334,Timestamp: 700871507550, Hand_number: 1
+ ,hand_Id_type: 416right hand ,hand_finger's_number:1,hand direction: (0.0705408, 0.288666, -0.954828) ,Palm position: (-9.73255, 103.609, 87.4806) ,Palm normal: (-0.0631919, -0.953996, -0.293084)
+ ,Finger_type(tipposition) TYPE_INDEX(-29.6259, 108.988, -8.15302)
+ ,Finger_type(tipposition) TYPE_THUMB(-17.7281, 67.6566, 53.565)
+ ,Finger_type(tipposition) TYPE_MIDDLE(-22.2167, 64.1265, 82.5992)
+ ,Finger_type(tipposition) TYPE_RING(-7.93752, 64.9032, 87.3312)
+ ,Finger_type(tipposition) TYPE_PINKY(5.40983, 71.0882, 87.8827)
+Frame.id:  462335,Timestamp: 700871526765, Hand_number: 1
+ ,hand_Id_type: 416right hand ,hand_finger's_number:1,hand direction: (0.0714689, 0.291113, -0.954015) ,Palm position: (-8.19042, 104.647, 87.5616) ,Palm normal: (-0.0481817, -0.954337, -0.294821)
+ ,Finger_type(tipposition) TYPE_INDEX(-27.5841, 110.137, -8.18277)
+ ,Finger_type(tipposition) TYPE_THUMB(-16.1479, 69.3026, 53.4074)
+ ,Finger_type(tipposition) TYPE_MIDDLE(-20.117, 64.8977, 82.0646)
+ ,Finger_type(tipposition) TYPE_RING(-5.81651, 65.8387, 86.6917)
+ ,Finger_type(tipposition) TYPE_PINKY(7.41966, 72.3076, 87.713)
+Frame.id:  462336,Timestamp: 700871546435, Hand_number: 1
+ ,hand_Id_type: 416right hand ,hand_finger's_number:1,hand direction: (0.0723073, 0.29229, -0.953592) ,Palm position: (-7.09956, 105.547, 87.728) ,Palm normal: (-0.037712, -0.95461, -0.295461)
+ ,Finger_type(tipposition) TYPE_INDEX(-26.1063, 111.185, -8.10382)
+ ,Finger_type(tipposition) TYPE_THUMB(-15.2356, 70.7355, 53.3055)
+ ,Finger_type(tipposition) TYPE_MIDDLE(-18.6411, 65.5653, 81.5394)
+ ,Finger_type(tipposition) TYPE_RING(-4.31577, 66.6701, 86.3337)
+ ,Finger_type(tipposition) TYPE_PINKY(8.84562, 73.3267, 87.5536)
+Frame.id:  462337,Timestamp: 700871566309, Hand_number: 1
+ ,hand_Id_type: 416right hand ,hand_finger's_number:1,hand direction: (0.0737247, 0.293127, -0.953227) ,Palm position: (-6.14256, 106.51, 87.3269) ,Palm normal: (-0.0351297, -0.954471, -0.296227)
+ ,Finger_type(tipposition) TYPE_INDEX(-24.8843, 112.517, -8.55686)
+ ,Finger_type(tipposition) TYPE_THUMB(-14.3162, 71.9042, 52.8214)
+ ,Finger_type(tipposition) TYPE_MIDDLE(-17.6092, 66.4138, 80.5856)
+ ,Finger_type(tipposition) TYPE_RING(-3.2524, 67.5638, 85.4966)
+ ,Finger_type(tipposition) TYPE_PINKY(9.89974, 74.2882, 86.7609)
+Frame.id:  462338,Timestamp: 700871585917, Hand_number: 1
+ ,hand_Id_type: 416right hand ,hand_finger's_number:1,hand direction: (0.0750062, 0.291948, -0.953488) ,Palm position: (-5.48156, 107.46, 86.8882) ,Palm normal: (-0.0342897, -0.954861, -0.295066)
+ ,Finger_type(tipposition) TYPE_INDEX(-24.0164, 113.664, -9.04498)
+ ,Finger_type(tipposition) TYPE_THUMB(-13.7001, 72.9268, 52.3896)
+ ,Finger_type(tipposition) TYPE_MIDDLE(-16.937, 67.2677, 79.7173)
+ ,Finger_type(tipposition) TYPE_RING(-2.55292, 68.4552, 84.7778)
+ ,Finger_type(tipposition) TYPE_PINKY(10.5999, 75.217, 85.9992)
+Frame.id:  462339,Timestamp: 700871605675, Hand_number: 1
+ ,hand_Id_type: 416right hand ,hand_finger's_number:1,hand direction: (0.0762371, 0.290782, -0.953747) ,Palm position: (-4.97188, 108.317, 86.5418) ,Palm normal: (-0.0339612, -0.955219, -0.293945)
+ ,Finger_type(tipposition) TYPE_INDEX(-23.3155, 114.795, -9.43744)
+ ,Finger_type(tipposition) TYPE_THUMB(-13.2424, 73.8443, 52.0532)
+ ,Finger_type(tipposition) TYPE_MIDDLE(-16.4332, 68.0435, 78.9779)
+ ,Finger_type(tipposition) TYPE_RING(-2.02698, 69.2544, 84.1771)
+ ,Finger_type(tipposition) TYPE_PINKY(11.1162, 76.051, 85.3866)
+Frame.id:  462340,Timestamp: 700871625000, Hand_number: 1
+ ,hand_Id_type: 416right hand ,hand_finger's_number:1,hand direction: (0.0771991, 0.286658, -0.954917) ,Palm position: (-4.50028, 109.192, 86.3049) ,Palm normal: (-0.0360886, -0.956345, -0.290004)
+ ,Finger_type(tipposition) TYPE_INDEX(-22.7432, 115.665, -9.71985)
+ ,Finger_type(tipposition) TYPE_THUMB(-13.3564, 75.053, 51.8169)
+ ,Finger_type(tipposition) TYPE_MIDDLE(-16.0652, 68.8473, 78.5154)
+ ,Finger_type(tipposition) TYPE_RING(-1.62444, 70.0534, 83.7531)
+ ,Finger_type(tipposition) TYPE_PINKY(11.5178, 76.8659, 85.0131)
+Frame.id:  462341,Timestamp: 700871644739, Hand_number: 1
+ ,hand_Id_type: 416right hand ,hand_finger's_number:1,hand direction: (0.0773339, 0.283351, -0.955893) ,Palm position: (-4.16297, 109.974, 86.1582) ,Palm normal: (-0.0362279, -0.957332, -0.286709)
+ ,Finger_type(tipposition) TYPE_INDEX(-22.3478, 116.422, -9.90201)
+ ,Finger_type(tipposition) TYPE_THUMB(-13.3097, 75.9765, 51.6966)
+ ,Finger_type(tipposition) TYPE_MIDDLE(-15.746, 69.5369, 78.1219)
+ ,Finger_type(tipposition) TYPE_RING(-1.26848, 70.7488, 83.2907)
+ ,Finger_type(tipposition) TYPE_PINKY(11.8533, 77.6241, 84.7248)
+Frame.id:  462342,Timestamp: 700871664342, Hand_number: 1
+ ,hand_Id_type: 416right hand ,hand_finger's_number:1,hand direction: (0.077389, 0.28152, -0.956429) ,Palm position: (-4.00748, 110.658, 86.0737) ,Palm normal: (-0.0340751, -0.957999, -0.28474)
+ ,Finger_type(tipposition) TYPE_INDEX(-22.0927, 117.187, -10.0238)
+ ,Finger_type(tipposition) TYPE_THUMB(-13.2874, 76.7643, 51.5984)
+ ,Finger_type(tipposition) TYPE_MIDDLE(-15.5127, 70.1166, 77.7288)
+ ,Finger_type(tipposition) TYPE_RING(-1.00406, 71.366, 82.8749)
+ ,Finger_type(tipposition) TYPE_PINKY(12.0837, 78.322, 84.4353)
+Frame.id:  462343,Timestamp: 700871683983, Hand_number: 1
+ ,hand_Id_type: 416right hand ,hand_finger's_number:1,hand direction: (0.0767379, 0.280882, -0.95667) ,Palm position: (-3.95674, 111.214, 85.9978) ,Palm normal: (-0.0296223, -0.958433, -0.283776)
+ ,Finger_type(tipposition) TYPE_INDEX(-21.965, 117.888, -10.1291)
+ ,Finger_type(tipposition) TYPE_THUMB(-13.6027, 77.7087, 51.3887)
+ ,Finger_type(tipposition) TYPE_MIDDLE(-15.2853, 70.5503, 77.2958)
+ ,Finger_type(tipposition) TYPE_RING(-0.748457, 71.8748, 82.4245)
+ ,Finger_type(tipposition) TYPE_PINKY(12.2893, 78.9329, 84.1292)
+Frame.id:  462344,Timestamp: 700871703752, Hand_number: 1
+ ,hand_Id_type: 416right hand ,hand_finger's_number:1,hand direction: (0.0756746, 0.280766, -0.956788) ,Palm position: (-3.92853, 111.613, 85.9556) ,Palm normal: (-0.0247897, -0.958713, -0.283292)
+ ,Finger_type(tipposition) TYPE_INDEX(-21.8957, 118.435, -10.1907)
+ ,Finger_type(tipposition) TYPE_THUMB(-13.8154, 78.3713, 51.2129)
+ ,Finger_type(tipposition) TYPE_MIDDLE(-15.0613, 70.8331, 76.9066)
+ ,Finger_type(tipposition) TYPE_RING(-0.497457, 72.2371, 82.0286)
+ ,Finger_type(tipposition) TYPE_PINKY(12.4757, 79.4121, 83.8281)
+Frame.id:  462345,Timestamp: 700871723369, Hand_number: 1
+ ,hand_Id_type: 416right hand ,hand_finger's_number:1,hand direction: (0.0747969, 0.28062, -0.9569) ,Palm position: (-3.92973, 111.9, 85.9264) ,Palm normal: (-0.0209336, -0.958935, -0.282853)
+ ,Finger_type(tipposition) TYPE_INDEX(-21.8707, 118.846, -10.2349)
+ ,Finger_type(tipposition) TYPE_THUMB(-13.951, 78.8069, 51.0906)
+ ,Finger_type(tipposition) TYPE_MIDDLE(-14.9055, 71.0169, 76.5182)
+ ,Finger_type(tipposition) TYPE_RING(-0.32017, 72.4967, 81.718)
+ ,Finger_type(tipposition) TYPE_PINKY(12.6037, 79.7612, 83.5461)
+Frame.id:  462346,Timestamp: 700871743106, Hand_number: 1
+ ,hand_Id_type: 416right hand ,hand_finger's_number:1,hand direction: (0.074148, 0.280315, -0.95704) ,Palm position: (-3.93226, 112.103, 85.9107) ,Palm normal: (-0.0180785, -0.959146, -0.282332)
+ ,Finger_type(tipposition) TYPE_INDEX(-21.8545, 119.14, -10.263)
+ ,Finger_type(tipposition) TYPE_THUMB(-14.1349, 79.1589, 50.9746)
+ ,Finger_type(tipposition) TYPE_MIDDLE(-14.7932, 71.133, 76.1784)
+ ,Finger_type(tipposition) TYPE_RING(-0.184503, 72.6663, 81.4221)
+ ,Finger_type(tipposition) TYPE_PINKY(12.694, 80.0075, 83.3083)
+Frame.id:  462347,Timestamp: 700871762728, Hand_number: 1
+ ,hand_Id_type: 416right hand ,hand_finger's_number:1,hand direction: (0.0737949, 0.279367, -0.957345) ,Palm position: (-3.96775, 112.306, 85.9185) ,Palm normal: (-0.0162798, -0.959497, -0.28125)
+ ,Finger_type(tipposition) TYPE_INDEX(-21.868, 119.384, -10.2715)
+ ,Finger_type(tipposition) TYPE_THUMB(-14.256, 79.4417, 50.9755)
+ ,Finger_type(tipposition) TYPE_MIDDLE(-14.7586, 71.2795, 76.0511)
+ ,Finger_type(tipposition) TYPE_RING(-0.126114, 72.8348, 81.2072)
+ ,Finger_type(tipposition) TYPE_PINKY(12.7171, 80.2362, 83.1082)
+Frame.id:  462348,Timestamp: 700871782347, Hand_number: 1
+ ,hand_Id_type: 416right hand ,hand_finger's_number:1,hand direction: (0.0736075, 0.278114, -0.957724) ,Palm position: (-4.12216, 112.493, 86.0378) ,Palm normal: (-0.0162612, -0.959866, -0.279986)
+ ,Finger_type(tipposition) TYPE_INDEX(-22.0212, 119.614, -10.163)
+ ,Finger_type(tipposition) TYPE_THUMB(-14.5517, 79.7083, 51.1045)
+ ,Finger_type(tipposition) TYPE_MIDDLE(-14.917, 71.4318, 76.0871)
+ ,Finger_type(tipposition) TYPE_RING(-0.267963, 73.0022, 81.1883)
+ ,Finger_type(tipposition) TYPE_PINKY(12.5605, 80.4198, 83.0959)
+Frame.id:  462349,Timestamp: 700871802201, Hand_number: 1
+ ,hand_Id_type: 416right hand ,hand_finger's_number:1,hand direction: (0.0732642, 0.278002, -0.957782) ,Palm position: (-4.47636, 112.714, 86.2627) ,Palm normal: (-0.0161911, -0.959905, -0.279857)
+ ,Finger_type(tipposition) TYPE_INDEX(-22.3839, 120.044, -9.93877)
+ ,Finger_type(tipposition) TYPE_THUMB(-14.8338, 79.886, 51.3478)
+ ,Finger_type(tipposition) TYPE_MIDDLE(-15.272, 71.6337, 76.2038)
+ ,Finger_type(tipposition) TYPE_RING(-0.616304, 73.2152, 81.3433)
+ ,Finger_type(tipposition) TYPE_PINKY(12.2059, 80.6462, 83.173)
+Frame.id:  462350,Timestamp: 700871822419, Hand_number: 1
+ ,hand_Id_type: 416right hand ,hand_finger's_number:1,hand direction: (0.0728774, 0.277501, -0.957957) ,Palm position: (-5.96389, 113.62, 87.6197) ,Palm normal: (-0.012902, -0.960169, -0.279123)
+ ,Finger_type(tipposition) TYPE_INDEX(-23.8163, 121.049, -8.60131)
+ ,Finger_type(tipposition) TYPE_THUMB(-16.1597, 80.6752, 52.7027)
+ ,Finger_type(tipposition) TYPE_MIDDLE(-16.6249, 72.4792, 77.4306)
+ ,Finger_type(tipposition) TYPE_RING(-1.97081, 74.1197, 82.652)
+ ,Finger_type(tipposition) TYPE_PINKY(10.8159, 81.6081, 84.4921)
+Frame.id:  462351,Timestamp: 700871843679, Hand_number: 1
+ ,hand_Id_type: 416right hand ,hand_finger's_number:1,hand direction: (0.0625198, 0.284672, -0.956584) ,Palm position: (-9.4791, 115.332, 91.0938) ,Palm normal: (-0.00429792, -0.958373, -0.285485)
+ ,Finger_type(tipposition) TYPE_INDEX(-28.1175, 123.426, -4.93967)
+ ,Finger_type(tipposition) TYPE_THUMB(-19.5759, 82.4799, 56.0071)
+ ,Finger_type(tipposition) TYPE_MIDDLE(-19.7611, 74.1349, 80.6415)
+ ,Finger_type(tipposition) TYPE_RING(-5.08251, 75.9023, 85.7436)
+ ,Finger_type(tipposition) TYPE_PINKY(7.6244, 83.5354, 87.5084)
+Frame.id:  462352,Timestamp: 700871861080, Hand_number: 1
+ ,hand_Id_type: 416right hand ,hand_finger's_number:1,hand direction: (0.0467122, 0.292454, -0.955138) ,Palm position: (-15.1171, 118.455, 96.7862) ,Palm normal: (-0.0312921, -0.955284, -0.294029)
+ ,Finger_type(tipposition) TYPE_INDEX(-35.7437, 128.011, 1.28567)
+ ,Finger_type(tipposition) TYPE_THUMB(-26.4712, 86.0216, 61.6766)
+ ,Finger_type(tipposition) TYPE_MIDDLE(-26.5174, 77.5814, 86.1538)
+ ,Finger_type(tipposition) TYPE_RING(-11.6888, 78.9909, 90.942)
+ ,Finger_type(tipposition) TYPE_PINKY(1.20676, 86.3466, 92.3936)
+Frame.id:  462353,Timestamp: 700871880789, Hand_number: 1
+ ,hand_Id_type: 416right hand ,hand_finger's_number:1,hand direction: (0.0092584, 0.31716, -0.948327) ,Palm position: (-23.9896, 121.477, 103.774) ,Palm normal: (-0.0285004, -0.947899, -0.317295)
+ ,Finger_type(tipposition) TYPE_INDEX(-48.0507, 133.269, 9.32616)
+ ,Finger_type(tipposition) TYPE_THUMB(-35.1157, 87.6003, 68.7159)
+ ,Finger_type(tipposition) TYPE_MIDDLE(-35.1987, 80.7208, 92.4703)
+ ,Finger_type(tipposition) TYPE_RING(-20.2304, 82.2269, 96.789)
+ ,Finger_type(tipposition) TYPE_PINKY(-7.40786, 89.7416, 97.8742)
+Frame.id:  462354,Timestamp: 700871900515, Hand_number: 1
+ ,hand_Id_type: 416right hand ,hand_finger's_number:1,hand direction: (-0.0423975, 0.299854, -0.953043) ,Palm position: (-35.169, 125.634, 111.164) ,Palm normal: (-0.0499545, -0.953343, -0.297726)
+ ,Finger_type(tipposition) TYPE_INDEX(-64.4006, 135.865, 18.0029)
+ ,Finger_type(tipposition) TYPE_THUMB(-47.451, 89.1448, 77.7694)
+ ,Finger_type(tipposition) TYPE_MIDDLE(-47.1585, 84.7342, 101.235)
+ ,Finger_type(tipposition) TYPE_RING(-31.9744, 86.2452, 104.7)
+ ,Finger_type(tipposition) TYPE_PINKY(-19.0879, 93.7216, 104.838)
+Frame.id:  462355,Timestamp: 700871920114, Hand_number: 1
+ ,hand_Id_type: 416right hand ,hand_finger's_number:1,hand direction: (-0.103153, 0.236764, -0.966076) ,Palm position: (-48.4933, 128.316, 118.031) ,Palm normal: (-0.12176, -0.966958, -0.223979)
+ ,Finger_type(tipposition) TYPE_INDEX(-84.4921, 133.876, 26.8697)
+ ,Finger_type(tipposition) TYPE_THUMB(-64.8187, 89.383, 88.5836)
+ ,Finger_type(tipposition) TYPE_MIDDLE(-63.2978, 87.5716, 111.982)
+ ,Finger_type(tipposition) TYPE_RING(-47.8362, 88.4632, 114.185)
+ ,Finger_type(tipposition) TYPE_PINKY(-34.6275, 95.1989, 112.717)
+Frame.id:  462356,Timestamp: 700871939915, Hand_number: 1
+ ,hand_Id_type: 416right hand ,hand_finger's_number:1,hand direction: (-0.181355, 0.0876299, -0.979506) ,Palm position: (-63.4182, 128.19, 128.047) ,Palm normal: (-0.240326, -0.969772, -0.0422627)
+ ,Finger_type(tipposition) TYPE_INDEX(-108.122, 123.038, 40.8219)
+ ,Finger_type(tipposition) TYPE_THUMB(-86.4054, 86.9738, 107.292)
+ ,Finger_type(tipposition) TYPE_MIDDLE(-82.7626, 88.9898, 130.429)
+ ,Finger_type(tipposition) TYPE_RING(-67.1521, 88.4207, 131.04)
+ ,Finger_type(tipposition) TYPE_PINKY(-53.5828, 93.2608, 127.248)
+Frame.id:  462357,Timestamp: 700871959624, Hand_number: 1
+ ,hand_Id_type: 416right hand ,hand_finger's_number:0,hand direction: (-0.291641, -0.00578333, -0.95651) ,Palm position: (-82.1332, 125.84, 135.014) ,Palm normal: (-0.262271, -0.961174, 0.0857782)
+ ,Finger_type(tipposition) TYPE_THUMB(-108.052, 83.3504, 121.356)
+ ,Finger_type(tipposition) TYPE_INDEX(-131.3, 82.3877, 101.23)
+ ,Finger_type(tipposition) TYPE_MIDDLE(-101.835, 87.6891, 143.603)
+ ,Finger_type(tipposition) TYPE_RING(-86.2874, 86.6882, 142.463)
+ ,Finger_type(tipposition) TYPE_PINKY(-73.1651, 90.7055, 136.667)
+Frame.id:  462358,Timestamp: 700871979509, Hand_number: 1
+ ,hand_Id_type: 416right hand ,hand_finger's_number:0,hand direction: (-0.379342, 0.0120587, -0.925178) ,Palm position: (-104.011, 122.734, 143.133) ,Palm normal: (-0.243, -0.966113, 0.0870427)
+ ,Finger_type(tipposition) TYPE_THUMB(-130.554, 80.1345, 130.92)
+ ,Finger_type(tipposition) TYPE_INDEX(-152.716, 72.2137, 124.405)
+ ,Finger_type(tipposition) TYPE_MIDDLE(-122.435, 84.1432, 152.616)
+ ,Finger_type(tipposition) TYPE_RING(-107.068, 83.3569, 149.967)
+ ,Finger_type(tipposition) TYPE_PINKY(-94.5935, 87.6768, 143.063)
+Frame.id:  462359,Timestamp: 700871999006, Hand_number: 1
+ ,hand_Id_type: 416right hand ,hand_finger's_number:0,hand direction: (-0.266582, -0.0827558, -0.960253) ,Palm position: (-118.403, 118.388, 151.471) ,Palm normal: (-0.351596, -0.919299, 0.176835)
+ ,Finger_type(tipposition) TYPE_THUMB(-146.447, 76.1658, 141.55)
+ ,Finger_type(tipposition) TYPE_INDEX(-169.546, 69.4984, 134.875)
+ ,Finger_type(tipposition) TYPE_MIDDLE(-141.763, 83.2655, 163.326)
+ ,Finger_type(tipposition) TYPE_RING(-126.371, 80.7468, 162.751)
+ ,Finger_type(tipposition) TYPE_PINKY(-112.804, 82.9492, 157.005)
+Frame.id:  462360,Timestamp: 700872018479, Hand_number: 0
+Frame.id:  462361,Timestamp: 700872058591, Hand_number: 0
+Frame.id:  462362,Timestamp: 700872078064, Hand_number: 0
+Frame.id:  462363,Timestamp: 700872097398, Hand_number: 0
+Frame.id:  462364,Timestamp: 700872116849, Hand_number: 0
+Frame.id:  462365,Timestamp: 700872137136, Hand_number: 0
+Frame.id:  462366,Timestamp: 700872156326, Hand_number: 0
+Frame.id:  462367,Timestamp: 700872175826, Hand_number: 0
+Frame.id:  462368,Timestamp: 700872195594, Hand_number: 0
+Frame.id:  462369,Timestamp: 700872215604, Hand_number: 0
