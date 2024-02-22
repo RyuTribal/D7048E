@@ -2,6 +2,7 @@
 #include "Connection.h"
 #include <time.h>
 #include <chrono>
+#include "Utils/Log.h"
 #include <thread>
 
 namespace Gesture {
@@ -35,13 +36,10 @@ namespace Gesture {
 
         //Get the buffer size needed to hold the tracking data
         result = LeapGetFrameSize(*Connection::Instance()->handle(), targetFrameTime, &targetFrameSize);
-        //Simulate delay (i.e. processing load, v-sync, etc)
         if (result == eLeapRS_Success) {
             LEAP_TRACKING_EVENT* interpolatedFrame = (LEAP_TRACKING_EVENT*)malloc((size_t)targetFrameSize);
-            //Get the frame
             result = LeapInterpolateFrame(*Gesture::Connection::Instance()->handle(), targetFrameTime, interpolatedFrame, targetFrameSize);
             if (result == eLeapRS_Success) {
-                //Use the data...
                 printf("Frame %lli with %i hands with delay of %lli microseconds.\n",
                     (long long int)interpolatedFrame->tracking_frame_id,
                     interpolatedFrame->nHands,
@@ -59,11 +57,11 @@ namespace Gesture {
                 free(interpolatedFrame);
             }
             else {
-                printf("LeapInterpolateFrame() result was %s.\n", Gesture::Connection::ResultString(result));
+                CORE_WARN("LeapInterpolateFrame() result was {0}", Gesture::Connection::ResultString(result));
             }
         }
         else {
-            printf("LeapGetFrameSize() result was %s.\n", Gesture::Connection::ResultString(result));
+            CORE_WARN("LeapGetFrameSize() result was {0}", Gesture::Connection::ResultString(result));
         }
 	}
 }
