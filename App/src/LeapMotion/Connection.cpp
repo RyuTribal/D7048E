@@ -32,7 +32,7 @@ namespace Gesture {
                 continue;
             }
 
-            CORE_INFO("Message: {0}", MessageTypeString(Instance()->latest_message.type));
+            // CORE_INFO("Message: {0}", MessageTypeString(Instance()->latest_message.type));
 
             switch (Instance()->latest_message.type) {
             case eLeapEventType_Tracking:

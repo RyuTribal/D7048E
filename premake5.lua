@@ -22,6 +22,8 @@ workspace "D7048E"
     IncludeDir["ImGui"] = "App/vendor/imgui"
     IncludeDir["glm"] = "App/vendor/glm"
     IncludeDir["LeapSDK"] = "App/vendor/LeapSDK/include"
+    IncludeDir["Json"] = "App/vendor/json_cpp"
+    IncludeDir["HttpLib"] = "App/vendor/cpp-httplib"
 
 group "Dependencies"
     include "App/vendor/GLFW"
@@ -56,7 +58,7 @@ project "App"
     libdirs
     {
         "%{prj.name}/vendor/GLFW/lib-vc2022",
-        "%{prj.name}/vendor/LeapSDK/lib/x64"
+        "%{prj.name}/vendor/LeapSDK/lib/x64",
     }
 
     links
@@ -64,7 +66,7 @@ project "App"
         "GLFW",
         "Glad",
         "ImGui",
-        "LeapC"
+        "LeapC",
     }
 
     defines
@@ -81,6 +83,8 @@ project "App"
         "%{IncludeDir.ImGui}",
         "%{IncludeDir.glm}",
         "%{IncludeDir.LeapSDK}",
+        "%{IncludeDir.Json}",
+        "%{IncludeDir.HttpLib}",
         "%{prj.name}/src",
     }
 
@@ -90,7 +94,8 @@ project "App"
         {
             "PLATFORM_WINDOWS",
             "BUILD_DLL",
-            "GLFW_INCLUDE_NONE"
+            "GLFW_INCLUDE_NONE",
+            "WIN32_LEAN_AND_MEAN"
         }
 
         postbuildcommands

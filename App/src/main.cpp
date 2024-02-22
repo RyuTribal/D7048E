@@ -1,10 +1,4 @@
-#include <stdio.h>
-#include <iostream>
-#include <stdlib.h>
 #include <Windows.h>
-#include <time.h>
-#include <chrono>
-#include <thread>
 #include "LeapMotion/Connection.h"
 #include "LeapMotion/HandTracker.h"
 #include "Utils/Log.h"
