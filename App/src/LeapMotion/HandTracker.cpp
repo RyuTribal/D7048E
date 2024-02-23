@@ -8,6 +8,21 @@
 
 namespace Gesture {
     LEAP_CLOCK_REBASER HandTracker::clock_synchronizer;
+    std::vector<LEAP_HAND> HandTracker::frames = {};
+    bool HandTracker::is_recording = false;
+
+
+    std::string join(const std::vector<std::string>& vec, const std::string& delim) {
+        std::string result;
+        for (size_t i = 0; i < vec.size(); ++i) {
+            if (i != 0) {
+                result += delim;
+            }
+            result += vec[i];
+        }
+        return result;
+    }
+
     void HandTracker::Init()
     {
         LeapCreateClockRebaser(&clock_synchronizer);
@@ -18,45 +33,59 @@ namespace Gesture {
         std::this_thread::sleep_for(std::chrono::milliseconds(milliseconds));
     }
 
-    void HandTracker::PopulateJson(JsonObject& json_obj, LEAP_HAND* hand)
-    {
-        json_obj.SetValue("hand_type", hand->type == eLeapHandType_Left ? "left" : "right");
-        json_obj.SetValue("hand_finger_nr", 5);
+    void HandTracker::PopulateJson(JsonObject& json_obj, const std::vector<LEAP_HAND>& frames) {
+        std::vector<std::string> hand_types;
+        std::vector<std::string> palm_pos_vecs;
+        std::map<std::string, std::vector<std::vector<float>>> finger_positions;
 
-        std::string rotation_vec = "[" + std::to_string(hand->palm.direction.x) + "," + std::to_string(hand->palm.direction.y) + "," + std::to_string(hand->palm.direction.z) + "]";
-        json_obj.SetValue("hand_direction", rotation_vec);
+        finger_positions["index"] = std::vector<std::vector<float>>();
+        finger_positions["middle"] = std::vector<std::vector<float>>();
+        finger_positions["ring"] = std::vector<std::vector<float>>();
+        finger_positions["pinky"] = std::vector<std::vector<float>>();
+        finger_positions["thumb"] = std::vector<std::vector<float>>();
 
-        std::string palm_pos_vec = "[" + std::to_string(hand->palm.position.x) + "," + std::to_string(hand->palm.position.y) + "," + std::to_string(hand->palm.position.z) + "]";
-        json_obj.SetValue("palm_position", palm_pos_vec);
+        for (const auto& hand : frames) {
+            hand_types.push_back(hand.type == eLeapHandType_Left ? "left" : "right");
+            palm_pos_vecs.push_back("[" + std::to_string(hand.palm.position.x) + "," + std::to_string(hand.palm.position.y) + "," + std::to_string(hand.palm.position.z) + "]");
+        
 
-        std::string palm_normal_vec = "[" + std::to_string(hand->palm.normal.x) + "," + std::to_string(hand->palm.normal.y) + "," + std::to_string(hand->palm.normal.z) + "]";
-        json_obj.SetValue("palm_normal", palm_normal_vec);
+            std::string fingers = "{";
+
+            finger_positions["index"].push_back({ hand.index.bones->next_joint.x, hand.index.bones->next_joint.y, hand.index.bones->next_joint.z });
+            finger_positions["middle"].push_back({ hand.middle.bones->next_joint.x, hand.middle.bones->next_joint.y, hand.middle.bones->next_joint.z });
+            finger_positions["ring"].push_back({ hand.ring.bones->next_joint.x, hand.ring.bones->next_joint.y, hand.ring.bones->next_joint.z });
+            finger_positions["pinky"].push_back({ hand.pinky.bones->next_joint.x, hand.pinky.bones->next_joint.y, hand.pinky.bones->next_joint.z });
+            finger_positions["thumb"].push_back({ hand.thumb.bones->next_joint.x, hand.thumb.bones->next_joint.y, hand.thumb.bones->next_joint.z });
+        }
 
         std::string fingers = "{";
-
-        fingers += "\"index\": [" + std::to_string(hand->index.bones->next_joint.x) + ", "
-            + std::to_string(hand->index.bones->next_joint.y) + ", "
-            + std::to_string(hand->index.bones->next_joint.z) + "], ";
-
-        fingers += "\"middle\": [" + std::to_string(hand->middle.bones->next_joint.x) + ", "
-            + std::to_string(hand->middle.bones->next_joint.y) + ", "
-            + std::to_string(hand->middle.bones->next_joint.z) + "], ";
-
-        fingers += "\"ring\": [" + std::to_string(hand->ring.bones->next_joint.x) + ", "
-            + std::to_string(hand->ring.bones->next_joint.y) + ", "
-            + std::to_string(hand->ring.bones->next_joint.z) + "], ";
-
-        fingers += "\"pinky\": [" + std::to_string(hand->pinky.bones->next_joint.x) + ", "
-            + std::to_string(hand->pinky.bones->next_joint.y) + ", "
-            + std::to_string(hand->pinky.bones->next_joint.z) + "], ";
-
-        fingers += "\"thumb\": [" + std::to_string(hand->thumb.bones->next_joint.x) + ", "
-            + std::to_string(hand->thumb.bones->next_joint.y) + ", "
-            + std::to_string(hand->thumb.bones->next_joint.z) + "]";
-
+        for (const auto& finger : finger_positions) {
+            fingers += "\"" + finger.first + "\":[";
+            for (size_t i = 0; i < finger.second.size(); ++i) {
+                fingers += "[";
+                for (size_t j = 0; j < finger.second[i].size(); ++j) {
+                    fingers += std::to_string(finger.second[i][j]);
+                    if (j < finger.second[i].size() - 1) {
+                        fingers += ",";
+                    }
+                }
+                fingers += "]";
+                if (i < finger.second.size() - 1) {
+                    fingers += ",";
+                }
+            }
+            fingers += "]";
+            fingers += ","; // Add a comma after each finger except the last
+        }
+        // Remove the trailing comma from the last finger entry
+        if (!finger_positions.empty()) {
+            fingers.pop_back();
+        }
         fingers += "}";
-        json_obj.SetValue("fingers", fingers);
 
+        json_obj.SetValue("hand_types", "[" + join(hand_types, ",") + "]");
+        json_obj.SetValue("palm_positions", "[" + join(palm_pos_vecs, ",") + "]");
+        json_obj.SetValue("fingers", fingers);
     }
 
     void HandTracker::OnTrackingFrame(const LEAP_TRACKING_EVENT* tracking_event)
@@ -86,6 +115,20 @@ namespace Gesture {
                     (long long int)interpolatedFrame->tracking_frame_id,
                     interpolatedFrame->nHands,
                     (long long int)LeapGetNow() - interpolatedFrame->info.timestamp);*/
+                if ((interpolatedFrame->nHands < 1 && is_recording) || frames.size() > 100) {
+                    is_recording = false;
+                    Gesture::JsonObject obj;
+                    PopulateJson(obj, frames);
+
+                    std::string url = "localhost:8000/api/model/";
+                    Gesture::JsonObject response = Request::Post(url, obj);
+
+                    CORE_INFO("Response: {0}", response.ToString());
+                    frames.clear();
+                }
+                else if (interpolatedFrame->nHands >= 1) {
+                    is_recording = true;
+                }
                 for (uint32_t h = 0; h < interpolatedFrame->nHands; h++) {
                     LEAP_HAND* hand = &interpolatedFrame->pHands[h];
                     /*printf("    Hand id %i is a %s hand with position (%f, %f, %f).\n",
@@ -94,13 +137,9 @@ namespace Gesture {
                         hand->palm.position.x,
                         hand->palm.position.y,
                         hand->palm.position.z);*/
-                    Gesture::JsonObject obj;
-                    PopulateJson(obj, hand);
 
-                    std::string url = "localhost:8000/api/model/";
-                    Gesture::JsonObject response = Request::Post(url, obj);
-
-                    CORE_INFO("Response: {0}", response.ToString());
+                    frames.push_back(*hand);
+                    
                 }
                 //Free the allocated buffer when done.
                 free(interpolatedFrame);

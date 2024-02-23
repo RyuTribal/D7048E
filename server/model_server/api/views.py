@@ -12,11 +12,8 @@ class BasicAPI(APIView):
     def post(self, request):
         req_data = request.data
         data = {
-            'hand_type': req_data.get('hand_type'),
-            'hand_finger_nr': req_data.get('hand_finger_nr'),
-            'hand_direction': req_data.get('hand_direction'),
-            'palm_position': req_data.get('palm_position'),
-            'palm_normal': req_data.get('palm_normal'),
+            'hand_types': req_data.get('hand_types'),
+            'palm_positions': req_data.get('palm_positions'),
             'fingers': req_data.get('fingers'),
         }
         model_path = os.path.join(settings.BASE_DIR, 'api/models', 'gesture_recognition_model.pkl')
@@ -34,28 +31,14 @@ class BasicAPI(APIView):
         ring = []
         pinky = []
 
-        index = 0
         fingers_string = data['fingers']
-
         fingers_object = json.loads(fingers_string)
-        palm_positions.append(json.loads(data['palm_position']))
-        thumb_positions.append(fingers_object['thumb'])
-        index_positions.append(fingers_object['index'])
-        middle_positions.append(fingers_object['middle'])
-        ring_positions.append(fingers_object['ring'])
-        pinky_positions.append(fingers_object['pinky'])
-
-        # Just a quick fix for now
-        palm_positions.append([0.0, 0.0, 0.0])
-        thumb_positions.append([0.0, 0.0, 0.0])
-        index_positions.append([0.0, 0.0, 0.0])
-        middle_positions.append([0.0, 0.0, 0.0])
-        ring_positions.append([0.0, 0.0, 0.0])
-        pinky_positions.append([0.0, 0.0, 0.0])
-        
-
-        print(np.array(palm_positions).shape)
-
+        palm_positions.extend(json.loads(data['palm_positions']))
+        thumb_positions.extend(fingers_object['thumb'])
+        index_positions.extend(fingers_object['index'])
+        middle_positions.extend(fingers_object['middle'])
+        ring_positions.extend(fingers_object['ring'])
+        pinky_positions.extend(fingers_object['pinky'])
 
         palm = [np.mean(palm_positions, axis=0), np.std(palm_positions, axis=0), np.cov(palm_positions, rowvar=False).diagonal(), np.sqrt(np.mean(np.square(palm_positions), axis=0))]
         thumb = [np.mean(thumb_positions, axis=0), np.std(thumb_positions, axis=0), np.cov(thumb_positions, rowvar=False).diagonal(), np.sqrt(np.mean(np.square(thumb_positions), axis=0))]
