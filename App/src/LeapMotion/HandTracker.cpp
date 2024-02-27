@@ -36,6 +36,8 @@ namespace Gesture {
     void HandTracker::PopulateJson(JsonObject& json_obj, const std::vector<LEAP_HAND>& frames) {
         std::vector<std::string> hand_types;
         std::vector<std::string> palm_pos_vecs;
+        std::vector<std::string> palm_norm_vecs;
+        std::vector<std::string> palm_dir_vecs;
         std::map<std::string, std::vector<std::vector<float>>> finger_positions;
 
         finger_positions["index"] = std::vector<std::vector<float>>();
@@ -45,9 +47,11 @@ namespace Gesture {
         finger_positions["thumb"] = std::vector<std::vector<float>>();
 
         for (const auto& hand : frames) {
-            hand_types.push_back(hand.type == eLeapHandType_Left ? "left" : "right");
+            hand_types.push_back(hand.type == eLeapHandType_Left ? "1" : "0");
+            palm_dir_vecs.push_back("[" + std::to_string(hand.palm.direction.x) + "," + std::to_string(hand.palm.direction.y) + "," + std::to_string(hand.palm.direction.z) + "]");
             palm_pos_vecs.push_back("[" + std::to_string(hand.palm.position.x) + "," + std::to_string(hand.palm.position.y) + "," + std::to_string(hand.palm.position.z) + "]");
-        
+            palm_norm_vecs.push_back("[" + std::to_string(hand.palm.normal.x) + "," + std::to_string(hand.palm.normal.y) + "," + std::to_string(hand.palm.normal.z) + "]");
+
 
             std::string fingers = "{";
 
@@ -84,6 +88,8 @@ namespace Gesture {
         fingers += "}";
 
         json_obj.SetValue("hand_types", "[" + join(hand_types, ",") + "]");
+        json_obj.SetValue("palm_directions", "[" + join(palm_dir_vecs, ",") + "]");
+        json_obj.SetValue("palm_normals", "[" + join(palm_norm_vecs, ",") + "]");
         json_obj.SetValue("palm_positions", "[" + join(palm_pos_vecs, ",") + "]");
         json_obj.SetValue("fingers", fingers);
     }
@@ -131,12 +137,12 @@ namespace Gesture {
                 }
                 for (uint32_t h = 0; h < interpolatedFrame->nHands; h++) {
                     LEAP_HAND* hand = &interpolatedFrame->pHands[h];
-                    /*printf("    Hand id %i is a %s hand with position (%f, %f, %f).\n",
+                    printf("    Hand id %i is a %s hand with position (%f, %f, %f).\n",
                         hand->id,
                         (hand->type == eLeapHandType_Left ? "left" : "right"),
                         hand->palm.position.x,
                         hand->palm.position.y,
-                        hand->palm.position.z);*/
+                        hand->palm.position.z);
 
                     frames.push_back(*hand);
                     
