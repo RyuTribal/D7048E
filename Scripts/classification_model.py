@@ -26,7 +26,7 @@ WINDOWS_SIZE = 100
 # Load training data
 for person in range(1, NB_PERSON+1):
     if(person>NB_PERSON*0.6): test=True
-    for gesture in [1,8,9,10,11]:
+    for gesture in [1,8,9]:
         for repetition in range(1, 6):
             filename = f"S{person}_G{gesture}_R{repetition}.txt"
             filepath = os.path.join(train_dir, filename)
