@@ -11,7 +11,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 # Definition of directories containing data files
-train_dir = "App/Database"
+train_dir = "Database"
 
 test=False
 
@@ -26,7 +26,7 @@ WINDOWS_SIZE = 100
 # Load training data
 for person in range(1, NB_PERSON+1):
     if(person>NB_PERSON*0.6): test=True
-    for gesture in range(6, 12):
+    for gesture in [1,8,9,10,11]:
         for repetition in range(1, 6):
             filename = f"S{person}_G{gesture}_R{repetition}.txt"
             filepath = os.path.join(train_dir, filename)
@@ -148,8 +148,8 @@ sns.heatmap(conf_matrix_percent, annot=True, cmap='Blues', fmt='0.1f')
 plt.xlabel('Predicted')
 plt.ylabel('Actual')
 plt.title('Confusion Matrix')
-plt.savefig('App/src/confusion_matrix.png')
+plt.savefig('confusion_matrix.png')
 plt.show()
 
 # Export the trained model
-joblib.dump(clf, 'App/src/gesture_recognition_model.pkl')
+joblib.dump(clf, 'gesture_recognition_model.pkl')
