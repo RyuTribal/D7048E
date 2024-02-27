@@ -49,14 +49,14 @@ class BasicAPI(APIView):
         pinky_positions.extend(fingers_object['pinky'])
 
         left_hand = int(np.median(left_hand))
-        hand_dir = [np.mean(hand_directions, axis=0), np.std(hand_directions, axis=0), np.cov(hand_directions, rowvar=False).diagonal(), np.sqrt(np.mean(np.square(hand_directions), axis=0))]
-        palm_pos = [np.mean(palm_positions, axis=0), np.std(palm_positions, axis=0), np.cov(palm_positions, rowvar=False).diagonal(), np.sqrt(np.mean(np.square(palm_positions), axis=0))]
-        palm_norm = [np.mean(palm_normals, axis=0), np.std(palm_normals, axis=0), np.cov(palm_normals, rowvar=False).diagonal(), np.sqrt(np.mean(np.square(palm_normals), axis=0))]
-        thumb = [np.mean(thumb_positions, axis=0), np.std(thumb_positions, axis=0), np.cov(thumb_positions, rowvar=False).diagonal(), np.sqrt(np.mean(np.square(thumb_positions), axis=0))]
-        index = [np.mean(index_positions, axis=0), np.std(index_positions, axis=0), np.cov(index_positions, rowvar=False).diagonal(), np.sqrt(np.mean(np.square(index_positions), axis=0))]
-        middle = [np.mean(middle_positions, axis=0), np.std(middle_positions, axis=0), np.cov(middle_positions, rowvar=False).diagonal(), np.sqrt(np.mean(np.square(middle_positions), axis=0))]
-        ring = [np.mean(ring_positions, axis=0), np.std(ring_positions, axis=0), np.cov(ring_positions, rowvar=False).diagonal(), np.sqrt(np.mean(np.square(ring_positions), axis=0))]
-        pinky = [np.mean(pinky_positions, axis=0), np.std(pinky_positions, axis=0), np.cov(pinky_positions, rowvar=False).diagonal(), np.sqrt(np.mean(np.square(pinky_positions), axis=0))]
+        hand_dir = [np.mean(hand_directions, axis=0), np.std(hand_directions, axis=0), np.cov(hand_directions, rowvar=False)[0],np.cov(hand_directions, rowvar=False)[1], np.cov(hand_directions, rowvar=False)[2], np.sqrt(np.mean(np.square(hand_directions), axis=0))]
+        palm_pos = [np.mean(palm_positions, axis=0), np.std(palm_positions, axis=0), np.cov(palm_positions, rowvar=False)[0], np.cov(palm_positions, rowvar=False)[1], np.cov(palm_positions, rowvar=False)[2], np.sqrt(np.mean(np.square(palm_positions), axis=0))]
+        palm_norm = [np.mean(palm_normals, axis=0), np.std(palm_normals, axis=0), np.cov(palm_normals, rowvar=False)[0], np.cov(palm_normals, rowvar=False)[1], np.cov(palm_normals, rowvar=False)[2], np.sqrt(np.mean(np.square(palm_normals), axis=0))]
+        thumb = [np.mean(thumb_positions, axis=0), np.std(thumb_positions, axis=0), np.cov(thumb_positions, rowvar=False)[0], np.cov(thumb_positions, rowvar=False)[1], np.cov(thumb_positions, rowvar=False)[2], np.sqrt(np.mean(np.square(thumb_positions), axis=0))]
+        index = [np.mean(index_positions, axis=0), np.std(index_positions, axis=0), np.cov(index_positions, rowvar=False)[0], np.cov(index_positions, rowvar=False)[1], np.cov(index_positions, rowvar=False)[2], np.sqrt(np.mean(np.square(index_positions), axis=0))]
+        middle = [np.mean(middle_positions, axis=0), np.std(middle_positions, axis=0), np.cov(middle_positions, rowvar=False)[0], np.cov(middle_positions, rowvar=False)[1], np.cov(middle_positions, rowvar=False)[2], np.sqrt(np.mean(np.square(middle_positions), axis=0))]
+        ring = [np.mean(ring_positions, axis=0), np.std(ring_positions, axis=0), np.cov(ring_positions, rowvar=False)[0], np.cov(ring_positions, rowvar=False)[1], np.cov(ring_positions, rowvar=False)[2], np.sqrt(np.mean(np.square(ring_positions), axis=0))]
+        pinky = [np.mean(pinky_positions, axis=0), np.std(pinky_positions, axis=0), np.cov(pinky_positions, rowvar=False)[0], np.cov(pinky_positions, rowvar=False)[1], np.cov(pinky_positions, rowvar=False)[2], np.sqrt(np.mean(np.square(pinky_positions), axis=0))]
         
         features = np.concatenate([hand_dir, palm_pos, palm_norm, thumb, index, middle, ring, pinky]).flatten()
         features = np.concatenate([[left_hand], features])
